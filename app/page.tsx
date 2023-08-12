@@ -93,49 +93,67 @@ export default function Home() {
   ];
   return (
     <main className="px-homeSpacing">
-      <section className="flex flex-col justify-between aspect-video py-8">
-        <div className="grid gap-2">
-          <h1 className="uppercase font-semibold">
-            The cost of ambition is high <br />
-            <span className="text-2xl">but the reward is even higher</span>
-          </h1>
-          <button className="py-2 px-6 border border-dcfRed rounded-lg max-w-max">
-            Play Degen Spin
-          </button>
+      <section className="flex flex-col justify-between h-[90vh]">
+        <div className="flex flex-col justify-center -mx-homeSpacing h-[60vh]">
+          <video className="w-full object-cover opacity-40" autoPlay muted loop>
+            <source src="/nekkro.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute flex flex-col justify-center px-homeSpacing gap-6">
+            <h1 className="uppercase font-semibold max-w-xl">
+              The cost of ambition is high <br />
+              <span className="text-6xl">but the reward is even higher</span>
+            </h1>
+            <button className="uppercase font-bold py-2 px-6 border border-dcfRed rounded max-w-max">
+              Play Degen Spin
+            </button>
+          </div>
         </div>
-        <div className="grid grid-cols-4 gap-4 relative">
-          <p className="absolute -top-8 left-0">Our Games</p>
-          <div>
-            <div className="bg-gray-500 aspect-video"></div>
-            <h2>Double Or Nothing</h2>
-            <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-              Find out more
-            </p>
-          </div>
-          <div>
-            <div className="bg-gray-500 aspect-video"></div>
-            <h2>Double Or Nothing</h2>
-            <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-              Find out more
-            </p>
-          </div>
-          <div>
-            <div className="bg-gray-500 aspect-video"></div>
-            <h2>Double Or Nothing</h2>
-            <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-              Find out more
-            </p>
-          </div>
-          <div>
-            <div className="bg-gray-500 aspect-video"></div>
-            <h2>Double Or Nothing</h2>
-            <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-              Find out more
-            </p>
+        <div className="flex flex-col gap-2 relative z-20 h-[20vh]">
+          <div className="absolute inset-x-0 -top-24 h-20 bg-gradient-to-t from-black px-homeSpacing -mx-homeSpacing to-transparent" />
+          <div className="absolute w-full h-full -top-24">
+            <p>Our Games</p>
+            <div className="grid grid-cols-4 items-end gap-4">
+              <div className="grid gap-6">
+                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+                <div>
+                  <h2>Double Or Nothing</h2>
+                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                    Find out more
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-6">
+                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+                <div>
+                  <h2>Double Or Nothing</h2>
+                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                    Find out more
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-6">
+                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+                <div>
+                  <h2>Double Or Nothing</h2>
+                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                    Find out more
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-6">
+                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+                <div>
+                  <h2>Double Or Nothing</h2>
+                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                    Find out more
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed -mx-homeSpacing aspect-video flex flex-col gap-8 justify-center items-center text-center">
+      <section className="bg-dcfRed -mx-homeSpacing h-screen flex flex-col gap-8 justify-center items-center text-center">
         <h1 className="uppercase text-6xl max-w-xl">
           <span className="text-sm">About Us</span>
           <br />
@@ -219,7 +237,7 @@ export default function Home() {
           Build With Us
         </button>
       </section>
-      <section className="aspect-video px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
+      <section className="h-screen px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -316,7 +334,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="aspect-video px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
+      <section className="h-screen px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
         <div></div>
         <div className="flex flex-col justify-between gap-4 order-last">
           <div className="grid gap-4">
@@ -414,7 +432,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="aspect-video px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
+      <section className="h-screen px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -511,7 +529,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="aspect-video px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
+      <section className="h-screen px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
         <div></div>
         <div className="flex flex-col justify-between gap-4 order-last">
           <div className="grid gap-4">
@@ -609,7 +627,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="aspect-video bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center py-48">
+      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center py-48">
         <div className="grid gap-4 pb-24">
           <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
           <p className="leading-7 max-w-2xl mx-auto">
@@ -639,7 +657,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className="bg-dcfRed aspect-video -mx-homeSpacing py-24 px-homeSpacing">
+      <section className="bg-dcfRed -mx-homeSpacing py-24 px-homeSpacing">
         <div className="grid grid-cols-2 gap-24">
           <div className="flex flex-col gap-8">
             <h2 className="uppercase text-6xl font-bold text-white">
