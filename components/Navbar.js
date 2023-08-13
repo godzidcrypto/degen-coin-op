@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-white flex justify-between py-8 px-12 fixed w-full items-center z-40 ${
+      className={`text-white flex justify-between py-8 px-12 fixed w-full items-center z-40 font-lato ${
         scrolling
           ? "bg-gray-950 transition duration-300 ease-in-out"
           : "bg-transparent transition duration-300 ease-in-out"

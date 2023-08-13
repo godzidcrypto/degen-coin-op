@@ -20,6 +20,10 @@ const config: Config = {
       spacing: {
         homeSpacing: "8rem",
       },
+      fontFamily: {
+        lato: "var(--lato-font)",
+        maistro: "var(--maistro-font)",
+      },
     },
   },
   plugins: [],

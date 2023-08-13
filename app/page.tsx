@@ -92,7 +92,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="px-homeSpacing">
+    <div className="px-homeSpacing">
       <section className="flex flex-col justify-between h-[90vh]">
         <div className="flex flex-col justify-center -mx-homeSpacing h-[60vh]">
           <video className="w-full object-cover opacity-40" autoPlay muted loop>
@@ -246,7 +246,7 @@ export default function Home() {
                 Double or Nothing
               </h1>
             </div>
-            <p className="leading-7">
+            <p className="leading-7 font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
               id nobis non asperiores deleniti sed eaque maiores provident
               tempore exercitationem saepe mollitia voluptatem, accusamus
@@ -254,7 +254,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider">
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Coin Flip
             </button>
             <div className="flex gap-4">
@@ -344,7 +344,7 @@ export default function Home() {
                 Drop it like its hot
               </h1>
             </div>
-            <p className="leading-7">
+            <p className="leading-7 font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
               id nobis non asperiores deleniti sed eaque maiores provident
               tempore exercitationem saepe mollitia voluptatem, accusamus
@@ -441,7 +441,7 @@ export default function Home() {
                 All or Nothing
               </h1>
             </div>
-            <p className="leading-7">
+            <p className="leading-7 font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
               id nobis non asperiores deleniti sed eaque maiores provident
               tempore exercitationem saepe mollitia voluptatem, accusamus
@@ -539,7 +539,7 @@ export default function Home() {
                 Artificial Cat Intelligence
               </h1>
             </div>
-            <p className="leading-7">
+            <p className="leading-7 font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
               id nobis non asperiores deleniti sed eaque maiores provident
               tempore exercitationem saepe mollitia voluptatem, accusamus
@@ -630,7 +630,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center py-48">
         <div className="grid gap-4 pb-24">
           <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
-          <p className="leading-7 max-w-2xl mx-auto">
+          <p className="leading-7 max-w-2xl mx-auto font-lato">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi id
             nobis non asperiores deleniti sed eaque maiores provident tempore
             exercitationem saepe mollitia voluptatem, accusamus quaerat sapiente
@@ -650,7 +650,7 @@ export default function Home() {
                   <h3 className="uppercase text-[#B660E4] text-lg font-bold">
                     {name}
                   </h3>
-                  <p>{description}</p>
+                  <p className="font-lato">{description}</p>
                 </div>
               </div>
             );
@@ -663,7 +663,7 @@ export default function Home() {
             <h2 className="uppercase text-6xl font-bold text-white">
               We make degen games <span className="text-black">join us.</span>
             </h2>
-            <p>
+            <p className="font-lato">
               Labore officia voluptate incididunt nostrud nulla Lorem est.
               Fugiat esse sunt ex anim in aliquip do ullamco tempor ullamco sunt
               incididunt fugiat. Elit ullamco sunt sit excepteur cillum. Commodo
@@ -697,7 +697,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-3xl font-bold">Front End Developer</h3>
-              <p className="font-light text-sm">
+              <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
                 occaecat duis magna ipsum laborum elit in ad et mollit. Qui
@@ -727,7 +727,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-3xl font-bold">Front End Developer</h3>
-              <p className="font-light text-sm">
+              <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
                 occaecat duis magna ipsum laborum elit in ad et mollit. Qui
@@ -757,7 +757,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-3xl font-bold">Front End Developer</h3>
-              <p className="font-light text-sm">
+              <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
                 occaecat duis magna ipsum laborum elit in ad et mollit. Qui
@@ -787,7 +787,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-3xl font-bold">Front End Developer</h3>
-              <p className="font-light text-sm">
+              <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
                 occaecat duis magna ipsum laborum elit in ad et mollit. Qui
@@ -798,6 +798,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
