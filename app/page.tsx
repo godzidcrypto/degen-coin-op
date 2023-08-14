@@ -294,7 +294,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="h-screen px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
+      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 -mx-homeSpacing relative">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -390,9 +390,30 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <img
+            alt="Degen Coin Flip Preview"
+            src="/images/dcf-phone.png"
+            className="absolute -bottom-12 h-full object-contain z-30"
+            loading="lazy"
+          />
+        </div>
+        <img
+          alt="Cat Flipping a Cion"
+          src="/images/flip.png"
+          className="absolute bottom-0 right-0 h-[30%] object-contain -scale-x-100"
+          loading="lazy"
+        />
       </section>
-      <section className="h-screen px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
-        <div></div>
+      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 bg-dcfWhite text-black -mx-homeSpacing relative">
+        <div>
+          <img
+            alt="Degen Coin Dozer Preview"
+            src="/images/dcd-phone.png"
+            className="absolute left-0 h-[60%] object-contain my-auto top-0 bottom-0"
+            loading="lazy"
+          />
+        </div>
         <div className="flex flex-col justify-between gap-4 order-last">
           <div className="grid gap-4">
             <div>
@@ -489,8 +510,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-screen px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
-        <div className="flex flex-col justify-between gap-4">
+      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 -mx-homeSpacing relative">
+        <div className="absolute w-full h-full">
+          <img
+            alt="Portal Background"
+            src="/images/ds-phone-bg.png"
+            className="brightness-50 w-full h-full"
+            loading="lazy"
+          />
+        </div>
+        <div className="absolute -left-36 bottom-24">
+          <img
+            alt="Ghost Cat"
+            src="/images/ghost.png"
+            className="w-[20%] -scale-x-100 rotate-[25deg]"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex flex-col justify-between gap-4 relative z-30">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Spin</h2>
@@ -585,9 +622,32 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <img
+            alt="Degen Spin Preview"
+            src="/images/ds-phone.png"
+            className="absolute -bottom-12 right-48 h-full object-contain z-30"
+            loading="lazy"
+          />
+        </div>
       </section>
-      <section className="h-screen px-48 py-24 grid grid-cols-2 bg-dcfWhite text-black -mx-homeSpacing">
-        <div></div>
+      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 bg-dcfWhite text-black -mx-homeSpacing relative">
+        <div>
+          <img
+            alt="Degen Coin Dozer Preview"
+            src="/images/ai-phone.png"
+            className="absolute left-0 h-[60%] object-contain my-auto top-0 bottom-0"
+            loading="lazy"
+          />
+        </div>
+        <div className="absolute right-0 bottom-0">
+          <img
+            alt="Degen Coin Dozer Preview"
+            src="/images/ai-hat.png"
+            className="h-full object-contain my-auto top-0 bottom-0"
+            loading="lazy"
+          />
+        </div>
         <div className="flex flex-col justify-between gap-4 order-last">
           <div className="grid gap-4">
             <div>
