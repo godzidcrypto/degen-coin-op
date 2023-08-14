@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const factions = [
     {
@@ -114,11 +116,12 @@ export default function Home() {
             <p>Our Games</p>
             <div className="grid grid-cols-4 items-end gap-4">
               <div className="grid gap-4">
-                <div className="bg-gray-500 aspect-video relative">
-                  <img
+                <div className="aspect-video relative">
+                  <Image
                     alt="Degen Coin Flip"
                     src="/images/dcf.png"
                     className="absolute inset-0 h-full w-full object-cover"
+                    layout="fill"
                   />
                 </div>
                 <div>
@@ -129,11 +132,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="bg-gray-500 aspect-video relative">
-                  <img
+                <div className="aspect-video relative">
+                  <Image
                     alt="Degen Coin Dozer"
                     src="/images/dcd.png"
                     className="absolute inset-0 h-full w-full object-cover"
+                    layout="fill"
+                    loading="lazy"
                   />
                 </div>
                 <div>
@@ -144,11 +149,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="bg-gray-500 aspect-video relative">
-                  <img
+                <div className="aspect-video relative">
+                  <Image
                     alt="Degen Spin"
                     src="/images/ds.png"
                     className="absolute inset-0 h-full w-full object-cover"
+                    layout="fill"
+                    loading="lazy"
                   />
                 </div>
                 <div>
@@ -159,11 +166,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="bg-gray-500 aspect-video relative">
-                  <img
+                <div className="aspect-video relative">
+                  <Image
                     alt="Artificial Cat Intelligence"
                     src="/images/gpt.png"
                     className="absolute inset-0 h-full w-full object-cover"
+                    layout="fill"
+                    loading="lazy"
                   />
                 </div>
                 <div>
@@ -177,89 +186,113 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed -mx-homeSpacing h-screen flex flex-col gap-8 justify-center items-center text-center">
-        <h1 className="uppercase text-6xl max-w-xl">
-          <span className="text-sm">About Us</span>
-          <br />
-          The Best Solana People Making The Best Games
-        </h1>
-        <div className="grid grid-cols-3 gap-36">
-          <div className="flex flex-col items-center">
-            <div className="bg-gray-800 rounded-full p-2 max-w-max">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span className="uppercase font-bold text-3xl">23 Million</span>
-            <p className="uppercase font-light text-sm">Monthly Active Users</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-gray-800 rounded-full p-2 max-w-max">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span className="uppercase font-bold text-3xl">23 Million</span>
-            <p className="uppercase font-light text-sm">Monthly Active Users</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-gray-800 rounded-full p-2 max-w-max">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span className="uppercase font-bold text-3xl">23 Million</span>
-            <p className="uppercase font-light text-sm">Monthly Active Users</p>
-          </div>
+      <section className="bg-dcfRed -mx-homeSpacing h-[80vh] relative">
+        <div className="absolute -left-12 h-full my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
+          <img
+            alt="Cat on Cloud 1"
+            src="/images/adam-left.png"
+            className="h-full object-cover"
+            loading="lazy"
+          />
         </div>
-        <button className="uppercase text-black bg-white rounded-full p-4 px-16">
-          Build With Us
-        </button>
+        <div className="absolute right-0 h-[80%] my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
+          <img
+            alt="Cat on Cloud 2"
+            src="/images/adam-right.png"
+            className="h-full object-contain"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex flex-col gap-8 justify-center items-center text-center h-full relative z-20">
+          <h1 className="uppercase text-6xl max-w-xl">
+            <span className="text-sm">About Us</span>
+            <br />
+            The Best Solana People Making The Best Games
+          </h1>
+          <div className="grid grid-cols-3 gap-36">
+            <div className="flex flex-col items-center">
+              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <span className="uppercase font-bold text-3xl">23 Million</span>
+              <p className="uppercase font-light text-sm">
+                Monthly Active Users
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <span className="uppercase font-bold text-3xl">23 Million</span>
+              <p className="uppercase font-light text-sm">
+                Monthly Active Users
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <span className="uppercase font-bold text-3xl">23 Million</span>
+              <p className="uppercase font-light text-sm">
+                Monthly Active Users
+              </p>
+            </div>
+          </div>
+          <button className="uppercase text-black bg-white rounded-full p-4 px-16">
+            Build With Us
+          </button>
+        </div>
       </section>
       <section className="h-screen px-48 py-24 grid grid-cols-2 -mx-homeSpacing">
         <div className="flex flex-col justify-between gap-4">
