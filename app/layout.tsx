@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import localFont from "@next/font/local";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${lato.variable} ${maistro.variable}`}>
         <Navbar />
         <main className="font-maistro">{children}</main>
+        <Footer />
       </body>
     </html>
   );

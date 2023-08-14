@@ -142,7 +142,7 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">Drop It Like Its Hot</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
@@ -159,7 +159,7 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">All or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
@@ -176,7 +176,9 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">
+                    Artificial Cat Intelligence
+                  </h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
@@ -640,7 +642,7 @@ export default function Home() {
       <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 bg-dcfWhite text-black -mx-homeSpacing relative">
         <div>
           <img
-            alt="Degen Coin Dozer Preview"
+            alt="Cat GPT Preview"
             src="/images/ai-phone.png"
             className="absolute left-0 h-[60%] object-contain my-auto top-0 bottom-0"
             loading="lazy"
@@ -648,7 +650,7 @@ export default function Home() {
         </div>
         <div className="absolute right-0 bottom-0">
           <img
-            alt="Degen Coin Dozer Preview"
+            alt="Cat Hat"
             src="/images/ai-hat.png"
             className="h-full object-contain my-auto top-0 bottom-0"
             loading="lazy"
@@ -805,7 +807,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed -mx-homeSpacing py-24 px-homeSpacing">
+      <section className="bg-dcfRed -mx-homeSpacing pt-48 px-homeSpacing relative">
+        <Image
+          alt="Cat on Whale"
+          src="/images/whale.png"
+          className="absolute w-[25%] -top-64 right-36 -scale-x-100"
+          width={500}
+          height={500}
+          // layout="fill"
+        />
         <div className="grid grid-cols-2 gap-24">
           <div className="flex flex-col gap-8">
             <h2 className="uppercase text-6xl font-bold text-white">
@@ -936,6 +946,15 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="relative h-screen -mx-homeSpacing -mt-36">
+          <Image
+            alt="Clouds"
+            src="/images/bottom.png"
+            className="absolute inset-0 h-full w-full object-cover"
+            layout="fill"
+          />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#263D67] to-transparent" />
         </div>
       </section>
     </div>
