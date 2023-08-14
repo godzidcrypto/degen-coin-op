@@ -110,40 +110,64 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2 relative z-20 h-[20vh]">
           <div className="absolute inset-x-0 -top-24 h-20 bg-gradient-to-t from-black px-homeSpacing -mx-homeSpacing to-transparent" />
-          <div className="absolute w-full h-full -top-24">
+          <div className="absolute w-full h-full -top-24 font-lato">
             <p>Our Games</p>
             <div className="grid grid-cols-4 items-end gap-4">
-              <div className="grid gap-6">
-                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+              <div className="grid gap-4">
+                <div className="bg-gray-500 aspect-video relative">
+                  <img
+                    alt="Degen Coin Flip"
+                    src="/images/dcf.png"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
                 <div>
-                  <h2>Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
                 </div>
               </div>
-              <div className="grid gap-6">
-                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+              <div className="grid gap-4">
+                <div className="bg-gray-500 aspect-video relative">
+                  <img
+                    alt="Degen Coin Dozer"
+                    src="/images/dcd.png"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
                 <div>
-                  <h2>Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
                 </div>
               </div>
-              <div className="grid gap-6">
-                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+              <div className="grid gap-4">
+                <div className="bg-gray-500 aspect-video relative">
+                  <img
+                    alt="Degen Spin"
+                    src="/images/ds.png"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
                 <div>
-                  <h2>Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
                 </div>
               </div>
-              <div className="grid gap-6">
-                <div className="bg-gray-500 aspect-video shadow-lg shadow-slate-500"></div>
+              <div className="grid gap-4">
+                <div className="bg-gray-500 aspect-video relative">
+                  <img
+                    alt="Artificial Cat Intelligence"
+                    src="/images/gpt.png"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
                 <div>
-                  <h2>Double Or Nothing</h2>
+                  <h2 className="font-bold text-xl">Double Or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
                     Find out more
                   </p>
