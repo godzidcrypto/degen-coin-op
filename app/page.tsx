@@ -6,91 +6,91 @@ export default function Home() {
       name: "Merchant",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19602.png",
     },
     {
-      name: "Merchant",
+      name: "Steampunk",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19589.png",
     },
     {
-      name: "Merchant",
+      name: "Holy",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19610.png",
     },
     {
-      name: "Merchant",
+      name: "Necromancer",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19621.png",
     },
     {
-      name: "Merchant",
+      name: "Witch",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19608.png",
     },
     {
-      name: "Merchant",
+      name: "Witch Hunter",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19608.png",
     },
     {
-      name: "Merchant",
+      name: "Gladiator",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19620.png",
     },
     {
-      name: "Merchant",
+      name: "Jester",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19609.png",
     },
     {
-      name: "Merchant",
+      name: "Knight",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19604.png",
     },
     {
-      name: "Merchant",
+      name: "Desert Nomad",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19614.png",
     },
     {
-      name: "Merchant",
+      name: "Demon",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19596.png",
     },
     {
-      name: "Merchant",
+      name: "Slime",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19617.png",
     },
     {
-      name: "Merchant",
+      name: "Wizard",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19606.png",
     },
     {
-      name: "Merchant",
+      name: "Samurai",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19595.png",
     },
     {
-      name: "Merchant",
+      name: "OG",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/355.png",
     },
   ];
   return (
@@ -231,10 +231,12 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className="uppercase font-bold text-3xl">23 Million</span>
-              <p className="uppercase font-light text-sm">
-                Monthly Active Users
-              </p>
+              <div className="font-lato">
+                <span className="uppercase font-bold text-3xl">23 Million</span>
+                <p className="uppercase font-light text-sm">
+                  Monthly Active Users
+                </p>
+              </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-gray-800 rounded-full p-2 max-w-max">
@@ -257,10 +259,12 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className="uppercase font-bold text-3xl">23 Million</span>
-              <p className="uppercase font-light text-sm">
-                Monthly Active Users
-              </p>
+              <div className="font-lato">
+                <span className="uppercase font-bold text-3xl">23 Million</span>
+                <p className="uppercase font-light text-sm">
+                  Monthly Active Users
+                </p>
+              </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-gray-800 rounded-full p-2 max-w-max">
@@ -283,10 +287,12 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <span className="uppercase font-bold text-3xl">23 Million</span>
-              <p className="uppercase font-light text-sm">
-                Monthly Active Users
-              </p>
+              <div className="font-lato">
+                <span className="uppercase font-bold text-3xl">23 Million</span>
+                <p className="uppercase font-light text-sm">
+                  Monthly Active Users
+                </p>
+              </div>
             </div>
           </div>
           <button className="uppercase text-black bg-white rounded-full p-4 px-16">
@@ -430,7 +436,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider">
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Coin Dozer
             </button>
             <div className="flex gap-4">
@@ -543,7 +549,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider">
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Spin
             </button>
             <div className="flex gap-4">
@@ -664,7 +670,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider">
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Catgpt
             </button>
             <div className="flex gap-4">
@@ -744,34 +750,59 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center py-48">
-        <div className="grid gap-4 pb-24">
-          <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
-          <p className="leading-7 max-w-2xl mx-auto font-lato">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi id
-            nobis non asperiores deleniti sed eaque maiores provident tempore
-            exercitationem saepe mollitia voluptatem, accusamus quaerat sapiente
-            quae voluptate fuga! Voluptatibus.
-          </p>
+      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center relative">
+        <div className="w-full h-full relative">
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent" />
+          <img
+            alt="Factions Statue"
+            src="/images/purple-fat-cat.png"
+            className="w-full h-[70vh] object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#3D2975] to-transparent" />
         </div>
-        <div className="grid grid-cols-2 gap-12 px-homeSpacing">
-          {factions.map((faction, index) => {
-            const { name, description, img } = faction;
-            return (
-              <div
-                key={index}
-                className="grid grid-cols-[1fr_2fr] text-left gap-4"
-              >
-                <div className="bg-[#3D2975] aspect-square border-4 border-[#B660E4]"></div>
-                <div className="flex flex-col gap-4 justify-between">
-                  <h3 className="uppercase text-[#B660E4] text-lg font-bold">
-                    {name}
-                  </h3>
-                  <p className="font-lato">{description}</p>
+        <div className="pt-12 pb-36 relative">
+          <img
+            alt="Ball of Yarn"
+            src="/images/yarn.png"
+            className="w-[20%] absolute -top-36 right-24"
+            loading="lazy"
+          />
+          <div className="grid gap-4 pb-24">
+            <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
+            <p className="leading-7 max-w-2xl mx-auto font-lato">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              id nobis non asperiores deleniti sed eaque maiores provident
+              tempore exercitationem saepe mollitia voluptatem, accusamus
+              quaerat sapiente quae voluptate fuga! Voluptatibus.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-12 px-homeSpacing">
+            {factions.map((faction, index) => {
+              const { name, description, img } = faction;
+              return (
+                <div
+                  key={index}
+                  className="grid grid-cols-[1fr_2fr] text-left gap-4"
+                >
+                  <div className="bg-[#3D2975] aspect-square border-4 border-[#B660E4] relative">
+                    <Image
+                      alt={`${name} Fat Cat`}
+                      src={img}
+                      className="absolute inset-0 h-full w-full object-cover"
+                      layout="fill"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4 justify-between">
+                    <h3 className="uppercase text-[#B660E4] text-lg font-bold">
+                      {name}
+                    </h3>
+                    <p className="font-lato">{description}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </section>
       <section className="bg-dcfRed -mx-homeSpacing py-24 px-homeSpacing">
@@ -787,7 +818,7 @@ export default function Home() {
               sunt enim officia ad cupidatat magna quis nostrud dolore laborum
               qui qui sit do cillum.
             </p>
-            <button className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest">
+            <button className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato">
               Apply Now
             </button>
           </div>
@@ -817,9 +848,7 @@ export default function Home() {
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
-                occaecat duis magna ipsum laborum elit in ad et mollit. Qui
-                consectetur fugiat deserunt anim enim Lorem laboris aute do id
-                eiusmod incididunt incididunt cupidatat.
+                occaecat duis magna ipsum laborum elit in ad et mollit.
               </p>
             </div>
             <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
@@ -847,9 +876,7 @@ export default function Home() {
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
-                occaecat duis magna ipsum laborum elit in ad et mollit. Qui
-                consectetur fugiat deserunt anim enim Lorem laboris aute do id
-                eiusmod incididunt incididunt cupidatat.
+                occaecat duis magna ipsum laborum elit in ad et mollit.
               </p>
             </div>
             <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
@@ -877,9 +904,7 @@ export default function Home() {
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
-                occaecat duis magna ipsum laborum elit in ad et mollit. Qui
-                consectetur fugiat deserunt anim enim Lorem laboris aute do id
-                eiusmod incididunt incididunt cupidatat.
+                occaecat duis magna ipsum laborum elit in ad et mollit.
               </p>
             </div>
             <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
@@ -907,9 +932,7 @@ export default function Home() {
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
-                occaecat duis magna ipsum laborum elit in ad et mollit. Qui
-                consectetur fugiat deserunt anim enim Lorem laboris aute do id
-                eiusmod incididunt incididunt cupidatat.
+                occaecat duis magna ipsum laborum elit in ad et mollit.
               </p>
             </div>
           </div>
