@@ -573,7 +573,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold">Front End Developer</h3>
+              <h3 className="text-3xl font-bold font-lato">
+                Front End Developer
+              </h3>
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
@@ -601,7 +603,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold">Front End Developer</h3>
+              <h3 className="text-3xl font-bold font-lato">
+                Front End Developer
+              </h3>
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
@@ -629,7 +633,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold">Front End Developer</h3>
+              <h3 className="text-3xl font-bold font-lato">
+                Front End Developer
+              </h3>
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
@@ -657,7 +663,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold">Front End Developer</h3>
+              <h3 className="text-3xl font-bold font-lato">
+                Front End Developer
+              </h3>
               <p className="font-light text-sm font-lato">
                 Sit deserunt voluptate incididunt elit consequat qui proident
                 consequat esse enim. Pariatur veniam excepteur sint exercitation
