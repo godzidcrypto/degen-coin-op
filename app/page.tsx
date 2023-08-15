@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Socials from "../components/Socials";
 
 export default function Home() {
   const factions = [
@@ -30,7 +31,7 @@ export default function Home() {
       name: "Witch",
       description:
         "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
-      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19608.png",
+      img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/867.png",
     },
     {
       name: "Witch Hunter",
@@ -213,24 +214,27 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-3 gap-36">
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
                   viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                    fill="currentColor"
-                  />
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="8" r="5" fill="currentColor" />
+                    <path d="M20 21a8 8 0 1 0-16 0" />
+                    <path
+                      fill="currentColor"
+                      d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8z"
+                    />
+                  </g>
                 </svg>
               </div>
               <div className="font-lato">
@@ -241,59 +245,44 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
                 >
                   <path
+                    fill="currentColor"
                     fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                    fill="currentColor"
+                    d="M2.45 6.76h9.59c.12 0 .23.05.32.14l1.52 1.56c.28.29.08.78-.32.78H3.97c-.12 0-.23-.05-.32-.14L2.13 7.54c-.28-.29-.08-.78.32-.78Zm-.32-2.07l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78l-1.51 1.56c-.08.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78Zm11.74 6.61l-1.52 1.56c-.09.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78Z"
                   />
                 </svg>
               </div>
               <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">23 Million</span>
+                <span className="uppercase font-bold text-3xl">10 Million</span>
                 <p className="uppercase font-light text-sm">
-                  Monthly Active Users
+                  Solana Transactions
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="bg-gray-800 rounded-full p-2 max-w-max">
+              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
                     fill="currentColor"
-                  />
-                  <path
-                    d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                    fill="currentColor"
+                    d="M592 192H473.26c12.69 29.59 7.12 65.2-17 89.32L320 417.58V464c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48V240c0-26.51-21.49-48-48-48zM480 376c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm-46.37-186.7L258.7 14.37c-19.16-19.16-50.23-19.16-69.39 0L14.37 189.3c-19.16 19.16-19.16 50.23 0 69.39L189.3 433.63c19.16 19.16 50.23 19.16 69.39 0L433.63 258.7c19.16-19.17 19.16-50.24 0-69.4zM96 248c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"
                   />
                 </svg>
               </div>
               <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">23 Million</span>
-                <p className="uppercase font-light text-sm">
-                  Monthly Active Users
-                </p>
+                <span className="uppercase font-bold text-3xl">17 Million</span>
+                <p className="uppercase font-light text-sm">Games Played</p>
               </div>
             </div>
           </div>
@@ -322,80 +311,11 @@ export default function Home() {
             <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Coin Flip
             </button>
-            <div className="flex gap-4">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
+            <Socials
+              twitter={"https://twitter.com/degencoinflip"}
+              discord={"https://twitter.com/degencoinflip"}
+              phantom={"https://twitter.com/degencoinflip"}
+            />
           </div>
         </div>
         <div>
@@ -441,80 +361,11 @@ export default function Home() {
             <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Coin Dozer
             </button>
-            <div className="flex gap-4">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
+            <Socials
+              twitter={"https://twitter.com/degencoinflip"}
+              discord={"https://twitter.com/degencoinflip"}
+              phantom={"https://twitter.com/degencoinflip"}
+            />
           </div>
         </div>
       </section>
@@ -554,80 +405,11 @@ export default function Home() {
             <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Spin
             </button>
-            <div className="flex gap-4">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
+            <Socials
+              twitter={"https://twitter.com/degencoinflip"}
+              discord={"https://twitter.com/degencoinflip"}
+              phantom={"https://twitter.com/degencoinflip"}
+            />
           </div>
         </div>
         <div>
@@ -675,80 +457,11 @@ export default function Home() {
             <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
               Play Degen Catgpt
             </button>
-            <div className="flex gap-4">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.03509 12.9431C3.24245 14.9227 4.10472 16.8468 5.62188 18.364C7.13904 19.8811 9.0631 20.7434 11.0428 20.9508L3.03509 12.9431Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3 11.4938L12.4921 20.9858C13.2976 20.9407 14.0981 20.7879 14.8704 20.5273L3.4585 9.11548C3.19793 9.88771 3.0451 10.6883 3 11.4938Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.86722 8.10999L15.8758 20.1186C16.4988 19.8201 17.0946 19.4458 17.6493 18.9956L4.99021 6.33659C4.54006 6.89125 4.16573 7.487 3.86722 8.10999Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
+            <Socials
+              twitter={"https://twitter.com/degencoinflip"}
+              discord={"https://twitter.com/degencoinflip"}
+              phantom={"https://twitter.com/degencoinflip"}
+            />
           </div>
         </div>
       </section>
@@ -787,16 +500,16 @@ export default function Home() {
                   key={index}
                   className="grid grid-cols-[1fr_2fr] text-left gap-4"
                 >
-                  <div className="bg-[#3D2975] aspect-square border-4 border-[#B660E4] relative">
+                  <div className="bg-[#3D2975] aspect-square border-4 border-[#B660E4] relative overflow-hidden">
                     <Image
                       alt={`${name} Fat Cat`}
                       src={img}
-                      className="absolute inset-0 h-full w-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover scale-150"
                       layout="fill"
                     />
                   </div>
                   <div className="flex flex-col gap-4 justify-between">
-                    <h3 className="uppercase text-[#B660E4] text-lg font-bold">
+                    <h3 className="uppercase text-[#B660E4] text-xl font-bold">
                       {name}
                     </h3>
                     <p className="font-lato">{description}</p>
