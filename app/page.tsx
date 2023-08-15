@@ -98,7 +98,13 @@ export default function Home() {
     <div className="px-homeSpacing">
       <section className="flex flex-col justify-between h-[90vh]">
         <div className="flex flex-col justify-center -mx-homeSpacing h-[60vh]">
-          <video className="w-full object-cover opacity-40" autoPlay muted loop>
+          <video
+            className="w-full object-cover opacity-40"
+            autoPlay
+            muted
+            loop
+            poster="/images/poster.png"
+          >
             <source src="/nekkro.mp4" type="video/mp4" />
           </video>
           <div className="absolute flex flex-col justify-center px-homeSpacing gap-6">
