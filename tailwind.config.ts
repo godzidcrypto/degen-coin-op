@@ -17,9 +17,6 @@ const config: Config = {
         dcfRed: "#E0564B",
         dcfWhite: "#E2E2E2",
       },
-      spacing: {
-        homeSpacing: "8rem",
-      },
       fontFamily: {
         lato: "var(--lato-font)",
         maistro: "var(--maistro-font)",

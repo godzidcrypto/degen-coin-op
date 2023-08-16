@@ -17,3 +17,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.homeSpacing {
+  @apply px-8 sm:px-16 md:px-24;
+}
+
+.extendHomeSpacing {
+  @apply -mx-8 sm:-mx-16 md:-mx-24;
+}

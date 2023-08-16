@@ -95,9 +95,9 @@ export default function Home() {
     },
   ];
   return (
-    <div className="px-homeSpacing">
+    <div className="homeSpacing">
       <section className="flex flex-col justify-between h-[90vh]">
-        <div className="flex flex-col justify-center -mx-homeSpacing h-[60vh]">
+        <div className="flex flex-col justify-center extendHomeSpacing h-[60vh]">
           <video
             className="w-full object-cover opacity-40"
             autoPlay
@@ -107,7 +107,7 @@ export default function Home() {
           >
             <source src="/nekkro.mp4" type="video/mp4" />
           </video>
-          <div className="absolute flex flex-col justify-center px-homeSpacing gap-6">
+          <div className="absolute flex flex-col justify-center homeSpacing gap-6">
             <h1 className="uppercase font-semibold max-w-xl">
               The cost of ambition is high <br />
               <span className="text-6xl">but the reward is even higher</span>
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-2 relative z-20 h-[20vh]">
-          <div className="absolute inset-x-0 -top-24 h-20 bg-gradient-to-t from-black px-homeSpacing -mx-homeSpacing to-transparent" />
+          <div className="absolute inset-x-0 -top-24 h-20 bg-gradient-to-t from-black homeSpacing extendHomeSpacing to-transparent" />
           <div className="absolute w-full h-full -top-24 font-lato">
             <p>Our Games</p>
             <div className="grid grid-cols-4 items-end gap-4">
@@ -195,7 +195,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed -mx-homeSpacing h-[80vh] relative">
+      <section className="bg-dcfRed extendHomeSpacing min-h-[80vh] relative">
         <div className="absolute -left-12 h-full my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
           <img
             alt="Cat on Cloud 1"
@@ -212,13 +212,13 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col gap-8 justify-center items-center text-center h-full relative z-20">
+        <div className="flex flex-col gap-8 justify-center items-center text-center min-h-[80vh] relative z-20 px-0 md:px-8 py-8 md:py-0">
           <h1 className="uppercase text-6xl max-w-xl">
             <span className="text-sm">About Us</span>
             <br />
             The Best Solana People Making The Best Games
           </h1>
-          <div className="grid grid-cols-3 gap-36">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-24">
             <div className="flex flex-col items-center">
               <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
                 <svg
@@ -297,7 +297,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 -mx-homeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -328,27 +328,27 @@ export default function Home() {
           <img
             alt="Degen Coin Flip Preview"
             src="/images/dcf-phone.png"
-            className="absolute -bottom-12 h-full object-contain z-30"
+            className="absolute left-0 bottom-0 md:left-auto md:bottom-auto xl:-bottom-12 h-0 md:h-[70%] xl:h-full object-contain z-30"
             loading="lazy"
           />
         </div>
         <img
-          alt="Cat Flipping a Cion"
+          alt="Cat Flipping a Coin"
           src="/images/flip.png"
-          className="absolute bottom-0 right-0 h-[30%] object-contain -scale-x-100"
+          className="absolute bottom-0 right-0 h-[20%] lg:h-[30%] object-contain -scale-x-100"
           loading="lazy"
         />
       </section>
-      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 bg-dcfWhite text-black -mx-homeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div>
           <img
             alt="Degen Coin Dozer Preview"
             src="/images/dcd-phone.png"
-            className="absolute left-0 h-[60%] object-contain my-auto top-0 bottom-0"
+            className="absolute left-0 h-[20%] sm:h-[25%] md:h-[33%] xl:h-[50%] object-contain md:my-auto md:top-0 bottom-0"
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col justify-between gap-4 order-last">
+        <div className="flex flex-col justify-between gap-4 order-first md:order-last">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Dozer</h2>
@@ -375,7 +375,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 -mx-homeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
         <div className="absolute w-full h-full">
           <img
             alt="Portal Background"
@@ -388,7 +388,7 @@ export default function Home() {
           <img
             alt="Ghost Cat"
             src="/images/ghost.png"
-            className="w-[20%] -scale-x-100 rotate-[25deg]"
+            className="w-80 -scale-x-100 rotate-[25deg]"
             loading="lazy"
           />
         </div>
@@ -422,17 +422,17 @@ export default function Home() {
           <img
             alt="Degen Spin Preview"
             src="/images/ds-phone.png"
-            className="absolute -bottom-12 right-48 h-full object-contain z-30"
+            className="absolute -bottom-12 lg:right-24 xl:right-48 md:h-[70%] lg:h-full object-contain z-30"
             loading="lazy"
           />
         </div>
       </section>
-      <section className="h-[70vh] px-48 py-24 grid grid-cols-2 gap-48 bg-dcfWhite text-black -mx-homeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div>
           <img
             alt="Cat GPT Preview"
             src="/images/ai-phone.png"
-            className="absolute left-0 h-[60%] object-contain my-auto top-0 bottom-0"
+            className="absolute left-0 h-[20%] sm:h-[25%] md:h-[33%] xl:h-[50%] object-contain md:my-auto md:top-0 bottom-0"
             loading="lazy"
           />
         </div>
@@ -440,15 +440,15 @@ export default function Home() {
           <img
             alt="Cat Hat"
             src="/images/ai-hat.png"
-            className="h-full object-contain my-auto top-0 bottom-0"
+            className="h-24 md:h-full object-contain my-auto top-0 bottom-0"
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col justify-between gap-4 order-last">
+        <div className="flex flex-col justify-between gap-4 order-first md:order-last">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Cat GPT</h2>
-              <h1 className="text-6xl uppercase font-bold max-w-xs">
+              <h1 className="text-6xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
                 Artificial Cat Intelligence
               </h1>
             </div>
@@ -471,13 +471,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] -mx-homeSpacing flex flex-col items-center text-center relative">
+      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] extendHomeSpacing flex flex-col items-center text-center relative">
         <div className="w-full h-full relative">
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent" />
           <img
             alt="Factions Statue"
             src="/images/purple-fat-cat.png"
-            className="w-full h-[70vh] object-cover"
+            className="w-full min-h-[70vh] object-cover"
             loading="lazy"
           />
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#3D2975] to-transparent" />
@@ -489,7 +489,7 @@ export default function Home() {
             className="w-[20%] absolute -top-36 right-24"
             loading="lazy"
           />
-          <div className="grid gap-4 pb-24">
+          <div className="grid gap-4 pb-24 px-8">
             <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
             <p className="leading-7 max-w-2xl mx-auto font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
@@ -498,15 +498,15 @@ export default function Home() {
               quaerat sapiente quae voluptate fuga! Voluptatibus.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-12 px-homeSpacing">
+          <div className="grid sm:grid-cols-2 gap-12 homeSpacing">
             {factions.map((faction, index) => {
               const { name, description, img } = faction;
               return (
                 <div
                   key={index}
-                  className="grid grid-cols-[1fr_2fr] text-left gap-4"
+                  className="grid lg:grid-cols-[1fr_2fr] text-left gap-4"
                 >
-                  <div className="bg-[#3D2975] aspect-square border-4 border-[#B660E4] relative overflow-hidden">
+                  <div className="bg-[#3D2975] h-32 aspect-square border-4 border-[#B660E4] relative overflow-hidden">
                     <Image
                       alt={`${name} Fat Cat`}
                       src={img}
@@ -526,7 +526,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed -mx-homeSpacing pt-48 px-homeSpacing relative">
+      <section className="bg-dcfRed extendHomeSpacing pt-48 homeSpacing relative">
         <Image
           alt="Cat on Whale"
           src="/images/whale.png"
@@ -535,10 +535,10 @@ export default function Home() {
           height={500}
           // layout="fill"
         />
-        <div className="grid grid-cols-2 gap-24">
+        <div className="grid lg:grid-cols-2 gap-24">
           <div className="flex flex-col gap-8">
             <h2 className="uppercase text-6xl font-bold text-white">
-              We make degen games <span className="text-black">join us.</span>
+              We make degen games <p className="text-black">join us.</p>
             </h2>
             <p className="font-lato">
               Labore officia voluptate incididunt nostrud nulla Lorem est.
@@ -551,7 +551,7 @@ export default function Home() {
               Apply Now
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             <div className="grid gap-4 rounded bg-dcfWhite text-black p-8">
               <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
                 <svg
@@ -674,7 +674,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative h-screen -mx-homeSpacing -mt-36">
+        <div className="relative h-screen extendHomeSpacing -mt-36">
           <Image
             alt="Clouds"
             src="/images/bottom.png"
