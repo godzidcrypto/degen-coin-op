@@ -382,7 +382,7 @@ export default function Home() {
           <img
             alt="Portal Background"
             src="/images/ds-phone-bg.png"
-            className="brightness-50 w-full h-full"
+            className="brightness-50 w-full h-full object-cover"
             loading="lazy"
           />
         </div>
