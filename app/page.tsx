@@ -96,10 +96,10 @@ export default function Home() {
   ];
   return (
     <div className="homeSpacing">
-      <section className="flex flex-col justify-between h-[90vh]">
-        <div className="flex flex-col justify-center extendHomeSpacing h-[60vh]">
+      <section className="flex flex-col justify-between min-h-[90vh]">
+        <div className="flex flex-col justify-center extendHomeSpacing h-[60vh] relative">
           <video
-            className="w-full object-cover opacity-40"
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
             autoPlay
             muted
             loop
@@ -110,18 +110,20 @@ export default function Home() {
           <div className="absolute flex flex-col justify-center homeSpacing gap-6">
             <h1 className="uppercase font-semibold max-w-xl">
               The cost of ambition is high <br />
-              <span className="text-6xl">but the reward is even higher</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                but the reward is even higher
+              </span>
             </h1>
             <button className="uppercase font-bold py-2 px-6 border border-dcfRed rounded max-w-max">
               Play Degen Spin
             </button>
           </div>
+          <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent" />
         </div>
-        <div className="flex flex-col gap-2 relative z-20 h-[20vh]">
-          <div className="absolute inset-x-0 -top-24 h-20 bg-gradient-to-t from-black homeSpacing extendHomeSpacing to-transparent" />
-          <div className="absolute w-full h-full -top-24 font-lato">
+        <div className="flex flex-col py-8 gap-2 relative z-20 min-h-[30vh] -mt-36">
+          <div className="w-full h-full font-lato z-30 relative">
             <p>Our Games</p>
-            <div className="grid grid-cols-4 items-end gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4">
               <div className="grid gap-4">
                 <div className="aspect-video relative">
                   <Image
@@ -213,7 +215,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col gap-8 justify-center items-center text-center min-h-[80vh] relative z-20 px-0 md:px-8 py-8 md:py-0">
-          <h1 className="uppercase text-6xl max-w-xl">
+          <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl max-w-xl">
             <span className="text-sm">About Us</span>
             <br />
             The Best Solana People Making The Best Games
@@ -297,12 +299,12 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Flip</h2>
-              <h1 className="text-6xl uppercase font-bold max-w-xs">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
                 Double or Nothing
               </h1>
             </div>
@@ -339,7 +341,7 @@ export default function Home() {
           loading="lazy"
         />
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div>
           <img
             alt="Degen Coin Dozer Preview"
@@ -352,7 +354,7 @@ export default function Home() {
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Dozer</h2>
-              <h1 className="text-6xl uppercase font-bold max-w-xs">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
                 Drop it like its hot
               </h1>
             </div>
@@ -375,7 +377,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative overflow-hidden lg:overflow-visible">
         <div className="absolute w-full h-full">
           <img
             alt="Portal Background"
@@ -384,19 +386,17 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        <div className="absolute -left-36 bottom-24">
-          <img
-            alt="Ghost Cat"
-            src="/images/ghost.png"
-            className="w-80 -scale-x-100 rotate-[25deg]"
-            loading="lazy"
-          />
-        </div>
+        <img
+          alt="Ghost Cat"
+          src="/images/ghost.png"
+          className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-32 md:-right-36 -bottom-24 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
+          loading="lazy"
+        />
         <div className="flex flex-col justify-between gap-4 relative z-30">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Spin</h2>
-              <h1 className="text-6xl uppercase font-bold max-w-xs">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
                 All or Nothing
               </h1>
             </div>
@@ -422,12 +422,12 @@ export default function Home() {
           <img
             alt="Degen Spin Preview"
             src="/images/ds-phone.png"
-            className="absolute -bottom-12 lg:right-24 xl:right-48 md:h-[70%] lg:h-full object-contain z-30"
+            className="absolute bottom-12 lg:-bottom-12 lg:right-24 xl:right-48 h-0 md:h-[70%] lg:h-full object-contain z-30"
             loading="lazy"
           />
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div>
           <img
             alt="Cat GPT Preview"
@@ -448,7 +448,7 @@ export default function Home() {
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Cat GPT</h2>
-              <h1 className="text-6xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold max-w-xs">
                 Artificial Cat Intelligence
               </h1>
             </div>
@@ -486,11 +486,13 @@ export default function Home() {
           <img
             alt="Ball of Yarn"
             src="/images/yarn.png"
-            className="w-[20%] absolute -top-36 right-24"
+            className="w-64 absolute -top-48 xl:-top-24 right-4 xl:right-16"
             loading="lazy"
           />
           <div className="grid gap-4 pb-24 px-8">
-            <h1 className="text-7xl uppercase font-bold">Fat Cats Factions</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold">
+              Fat Cats Factions
+            </h1>
             <p className="leading-7 max-w-2xl mx-auto font-lato">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
               id nobis non asperiores deleniti sed eaque maiores provident
@@ -526,18 +528,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed extendHomeSpacing pt-48 homeSpacing relative">
+      <section className="bg-dcfRed extendHomeSpacing pt-24 lg:pt-48 homeSpacing relative">
         <Image
           alt="Cat on Whale"
           src="/images/whale.png"
-          className="absolute w-[25%] -top-64 right-36 -scale-x-100"
+          className="absolute w-64 -top-40 right-0 lg:right-36 -scale-x-100"
           width={500}
           height={500}
           // layout="fill"
         />
-        <div className="grid lg:grid-cols-2 gap-24">
+        <div className="grid lg:grid-cols-2 gap-12 z-30 relative">
           <div className="flex flex-col gap-8">
-            <h2 className="uppercase text-6xl font-bold text-white">
+            <h2 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               We make degen games <p className="text-black">join us.</p>
             </h2>
             <p className="font-lato">
