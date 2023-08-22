@@ -349,21 +349,24 @@ export default function Home() {
         />
       </section>
       <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
-        <div className="-my-24">
-          <img
-            alt="Degen Coin Dozer Preview"
-            src="/images/dcd-phone.png"
-            className="absolute left-0 h-[20%] sm:h-[25%] md:h-[33%] xl:h-[50%] object-contain md:my-auto md:top-0 bottom-0"
-            loading="lazy"
-          />
-          <img
-            alt="Purple DCD Cat"
-            src="/images/purple-dcd-cat.png"
-            className="absolute h-[20%] xl:h-[25%] my-auto"
-            loading="lazy"
-          />
+        <div></div>
+        <div className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full">
+          <div className="md:relative">
+            <img
+              alt="Degen Coin Dozer Preview"
+              src="/images/dcd-phone.png"
+              className="object-contain w-60 md:w-[60%] bottom-0 absolute md:relative"
+              loading="lazy"
+            />
+            <img
+              alt="Purple DCD Cat"
+              src="/images/purple-dcd-cat.png"
+              className="absolute md:left-0 md:-top-16 lg:-top-24 -bottom-8 right-0 z-30 w-40 md:w-64 lg:w-auto"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <div className="flex flex-col justify-between gap-4 order-first md:order-last">
+        <div className="flex flex-col justify-between gap-4 order-first md:order-last z-20">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Dozer</h2>
