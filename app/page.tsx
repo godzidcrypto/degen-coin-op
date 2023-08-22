@@ -215,6 +215,13 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col gap-8 justify-center items-center text-center min-h-[80vh] relative z-20 px-0 md:px-8 py-8 md:py-0">
+          <Image
+            width={400}
+            height={400}
+            src="/images/logo-main.png"
+            alt="Degen Coin Op Logo"
+            className="w-auto scale-100 md:scale-[2]"
+          />
           <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl max-w-xl">
             <span className="text-sm">About Us</span>
             <br />
@@ -342,11 +349,17 @@ export default function Home() {
         />
       </section>
       <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
-        <div>
+        <div className="-my-24">
           <img
             alt="Degen Coin Dozer Preview"
             src="/images/dcd-phone.png"
             className="absolute left-0 h-[20%] sm:h-[25%] md:h-[33%] xl:h-[50%] object-contain md:my-auto md:top-0 bottom-0"
+            loading="lazy"
+          />
+          <img
+            alt="Purple DCD Cat"
+            src="/images/purple-dcd-cat.png"
+            className="absolute h-[20%] xl:h-[25%] my-auto"
             loading="lazy"
           />
         </div>
@@ -483,12 +496,20 @@ export default function Home() {
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#3D2975] to-transparent" />
         </div>
         <div className="pt-12 pb-36 relative">
-          <img
-            alt="Ball of Yarn"
-            src="/images/yarn.png"
-            className="w-64 absolute -top-48 xl:-top-24 right-4 xl:right-16"
-            loading="lazy"
-          />
+          <div className="absolute -top-48 xl:-top-24 right-4 xl:right-16">
+            <img
+              alt="Ball of Yarn"
+              src="/images/yarn.png"
+              className="w-64 relative z-20"
+              loading="lazy"
+            />
+            <img
+              alt="Ball of Yarn"
+              src="/images/shadow.png"
+              className="w-52 -mt-16 relative z-10"
+              loading="lazy"
+            />
+          </div>
           <div className="grid gap-4 pb-24 px-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold">
               Fat Cats Factions
@@ -539,6 +560,12 @@ export default function Home() {
         />
         <div className="grid lg:grid-cols-2 gap-12 z-30 relative">
           <div className="flex flex-col gap-8">
+            <Image
+              width={200}
+              height={200}
+              src="/images/logo-main.png"
+              alt="Degen Coin Op Logo"
+            />
             <h2 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               We make degen games <p className="text-black">join us.</p>
             </h2>
