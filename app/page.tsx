@@ -6,91 +6,89 @@ export default function Home() {
     {
       name: "Merchant",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "The Merchants Guild is a vast corporation that supplies adventurers with all their needs for the right price. They are known for their vast hoard of treasures and artifacts and are also brokers of valuable information.  Headquarters resides under Purraria - biggest kingdom in Mau - ruled by King Robert",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19602.png",
     },
     {
       name: "Steampunk",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Sovereigns of the sky who sail the clouds on magnificent steamships in search of treasures and energy. They are known for their cutting-edge technology and their relentless pursuit of progress and exploration.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19589.png",
     },
     {
       name: "Holy",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Wrapped in mystery, these cats harness the power of both light and dark magic to aid those in need. They are humble in their mission to help those in need, but their true motivations are unknown. They worship The Church of Her.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19610.png",
     },
     {
       name: "Necromancer",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Necromancers communicate with  spirits, utilizing their energy to restore life to their allies or to reanimate their enemies. They are known for their mysterious connection to the spirits and their mastery of the deceased.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19621.png",
     },
     {
       name: "Witch",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Witches possess the knowledge of an ancient tome, allowing them to manipulate gravity and bend the world to their will. They are worldly travelers, known for their grand attire and awe-inspiring power.  -Raising Cities/Kingdoms from nothing",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/867.png",
     },
     {
       name: "Witch Hunter",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "The Witch Hunters are feared by all, as they stalk the night in search of their prey or salvation. Their mission is to rebirth their wilds and harmonize the circle of life in Gulvin's Forest.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19608.png",
     },
     {
       name: "Gladiator",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Born from absolute survival, Gladiators are a time-forged tribe of fierce warriors who have trained for generations to become the best in combat. They fight with claws and fangs, and their armor symbolizes their successes in The Arena.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19620.png",
     },
     {
       name: "Jester",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "The Laughing Lords are focused on keeping their bags full of gold and hosting monumental parties across Mau. Jesters are known for their love of excess and indulgence, using their charm, wit, and agility to get ahead.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19609.png",
     },
     {
       name: "Knight",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Brave and daring swordcats who rush towards adventure with the glint of sun on their sword. They follow their heart through quests and peril, and are celebrated by the Royal Cat Guard for their bravery and success.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19604.png",
     },
     {
       name: "Desert Nomad",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Roaming the wastelands of their buried civilization, Desert Nomads are a blend of fierce fighters, tactful traders, and unique builders. They have come together in unity to rule the desert and host the Arena with the Merchants along with their Anciet Spire City turned to a Grand Bazaar",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19614.png",
     },
     {
       name: "Demon",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Terrible creatures of darkness and chaos that dwell in the dark depths of the oceans of Mau. They are feared by all who know of them and are known for their powerful tentacles and mastery of dark magic.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19596.png",
     },
     {
       name: "Slime",
-      description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+      description: "???",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19617.png",
     },
     {
       name: "Wizard",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "Masters of the elements who unleash raw energy in chaotic bursts. Fueled by scorching vengeance, their abilities are explosive and often leave craters in their wake. - Their leader stole a page from the Ancient Tome from Witches, that's where they learn their unstable powers.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19606.png",
     },
     {
       name: "Samurai",
       description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+        "The fall of Emperor Kaido has led to the creation of a new era of Samurai. They are the city-guard and a covert elite unit, always ready for action with their sharp blades. They are at peace in battle, using their precision and skill to defeat their foes. They are the protectors of Hanma and have a reputation for their katana mastery.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/19595.png",
     },
     {
       name: "OG",
-      description:
-        "Ad occaecat aliqua dolore voluptate consequat anim consectetur ipsum consequat reprehenderit. Non est voluptate id sunt ullamco pariatur excepteur elit excepteur id officia nostrud sit labore anim.",
+      description: "???",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/355.png",
     },
   ];
@@ -306,7 +304,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -316,10 +314,11 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              id nobis non asperiores deleniti sed eaque maiores provident
-              tempore exercitationem saepe mollitia voluptatem, accusamus
-              quaerat sapiente quae voluptate fuga! Voluptatibus.
+              A decentralized cryptocurrency game built on Solana where users
+              can play a virtual coin flip game via a smart contract with 50/50
+              odds and a 3.5% fee. Every game is logged on chain and verifiable.
+              The game is built by Degen Coin Op, a technology services
+              provider.
             </p>
           </div>
           <div className="grid gap-4">
@@ -348,7 +347,7 @@ export default function Home() {
           loading="lazy"
         />
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div></div>
         <div className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full">
           <div className="md:relative">
@@ -361,7 +360,7 @@ export default function Home() {
             <img
               alt="Purple DCD Cat"
               src="/images/purple-dcd-cat.png"
-              className="absolute md:left-0 md:-top-16 lg:-top-24 -bottom-8 right-0 z-30 w-40 md:w-64 lg:w-auto"
+              className="absolute md:left-0 md:-top-16 lg:-top-24 -bottom-[1.7rem] right-0 z-30 w-40 md:w-64 lg:w-auto"
               loading="lazy"
             />
           </div>
@@ -375,10 +374,11 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              id nobis non asperiores deleniti sed eaque maiores provident
-              tempore exercitationem saepe mollitia voluptatem, accusamus
-              quaerat sapiente quae voluptate fuga! Voluptatibus.
+              A cryptocurrency game built on Solana that is similar to the
+              classic arcade game where players push coins off a platform to win
+              prizes. Users can play the game via a smart contract and every
+              game is logged on chain and verifiable. This game was built by
+              Omega, a Web3 developer and holder of Degen Fat Cats NFT.
             </p>
           </div>
           <div className="grid gap-4">
@@ -393,7 +393,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative overflow-hidden lg:overflow-visible">
+      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative overflow-hidden lg:overflow-visible">
         <div className="absolute w-full h-full">
           <img
             alt="Portal Background"
@@ -405,7 +405,7 @@ export default function Home() {
         <img
           alt="Ghost Cat"
           src="/images/ghost.png"
-          className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-32 md:-right-36 -bottom-24 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
+          className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-12 md:-right-36 -bottom-28 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
           loading="lazy"
         />
         <div className="flex flex-col justify-between gap-4 relative z-30">
@@ -417,10 +417,15 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              id nobis non asperiores deleniti sed eaque maiores provident
-              tempore exercitationem saepe mollitia voluptatem, accusamus
-              quaerat sapiente quae voluptate fuga! Voluptatibus.
+              A Solana-based game that is similar to slots. Players can offer
+              anywhere from .05 to 1 SOL to a magic necromancer shrine. The
+              shrine has runes that pop up and fly around a magic ball, and when
+              the ball explodes, it gives players three runes as a result. Runes
+              can be common, rare, or super rare, with each rune having a
+              faction associated with it. Some factions are more valuable than
+              others. Players receive a bonus when they hit 2 of the same runes
+              with the same faction and a bigger bonus if they hit 3 of the same
+              runes with the same faction.
             </p>
           </div>
           <div className="grid gap-4">
@@ -438,12 +443,12 @@ export default function Home() {
           <img
             alt="Degen Spin Preview"
             src="/images/ds-phone.png"
-            className="absolute bottom-12 lg:-bottom-12 lg:right-24 xl:right-48 h-0 md:h-[70%] lg:h-full object-contain z-30"
+            className="absolute bottom-12 lg:-bottom-12 lg:right-0 xl:right-48 h-0 md:h-[70%] lg:h-full object-contain z-30"
             loading="lazy"
           />
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 md:px-24 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
+      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div>
           <img
             alt="Cat GPT Preview"
@@ -469,10 +474,10 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              id nobis non asperiores deleniti sed eaque maiores provident
-              tempore exercitationem saepe mollitia voluptatem, accusamus
-              quaerat sapiente quae voluptate fuga! Voluptatibus.
+              Degen Cat GPT is a new game offering that uses AI to create fun
+              and unique storylines and quests for users. This text-based
+              adventure game uses AI to create new and exciting experiences each
+              time and allows users to input their own decisions and choices
             </p>
           </div>
           <div className="grid gap-4">
@@ -517,11 +522,9 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold">
               Fat Cats Factions
             </h1>
-            <p className="leading-7 max-w-2xl mx-auto font-lato">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              id nobis non asperiores deleniti sed eaque maiores provident
-              tempore exercitationem saepe mollitia voluptatem, accusamus
-              quaerat sapiente quae voluptate fuga! Voluptatibus.
+            <p className="leading-7 mx-auto font-lato">
+              Welcome to the world of Mau, where factions of cats wield powerful
+              magic and battle for honor, wealth, and power.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-12 homeSpacing">
@@ -530,9 +533,9 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className="grid lg:grid-cols-[1fr_2fr] text-left gap-4"
+                  className="grid sm:flex sm:flex-col lg:grid lg:grid-cols-[1fr_3fr] text-left gap-4"
                 >
-                  <div className="bg-[#3D2975] h-32 aspect-square border-4 border-[#B660E4] relative overflow-hidden">
+                  <div className="bg-[#3D2975] h-32 sm:h-auto aspect-square border-4 border-[#B660E4] relative overflow-hidden">
                     <Image
                       alt={`${name} Fat Cat`}
                       src={img}
@@ -540,7 +543,7 @@ export default function Home() {
                       layout="fill"
                     />
                   </div>
-                  <div className="flex flex-col gap-4 justify-between">
+                  <div className="flex flex-col gap-4">
                     <h3 className="uppercase text-[#B660E4] text-xl font-bold">
                       {name}
                     </h3>
@@ -561,7 +564,7 @@ export default function Home() {
           height={500}
           // layout="fill"
         />
-        <div className="grid lg:grid-cols-2 gap-12 z-30 relative">
+        <div className="grid lg:grid-cols-[1fr_2fr] xl:grid-cols-2 gap-12 z-30 relative">
           <div className="flex flex-col gap-8">
             <Image
               width={200}
