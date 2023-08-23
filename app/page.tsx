@@ -455,13 +455,16 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
-        <div>
-          <img
-            alt="Cat GPT Preview"
-            src="/images/ai-phone.png"
-            className="absolute left-0 h-[20%] sm:h-[25%] md:h-[33%] xl:h-[50%] object-contain md:my-auto md:top-0 bottom-0"
-            loading="lazy"
-          />
+        <div></div>
+        <div className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full">
+          <div className="md:relative">
+            <img
+              alt="Cat GPT Preview"
+              src="/images/ai-phone.png"
+              className="object-contain w-60 md:w-[60%] bottom-0 absolute md:relative"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="absolute right-0 bottom-0">
           <img
