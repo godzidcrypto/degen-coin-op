@@ -62,12 +62,14 @@ const Navbar = () => {
             : "bg-transparent transition duration-300 ease-in-out"
         }`}
       >
-        <Image
-          width={100}
-          height={100}
-          src="/images/logo-nav.png"
-          alt="Degen Coin Op Logo"
-        />
+        <Link href={"#"}>
+          <Image
+            width={100}
+            height={100}
+            src="/images/logo-nav.png"
+            alt="Degen Coin Op Logo"
+          />
+        </Link>
         <button
           className={`focus:ring-2 focus:ring-white rounded-lg p-2`}
           onClick={() => setOpen(!open)}
@@ -95,7 +97,7 @@ const Navbar = () => {
         </button>
         <div
           className={`${
-            open ? "opacity-100" : "opacity-0"
+            open ? "opacity-100" : "opacity-0 pointer-events-none"
           } flex flex-col absolute top-[84px] left-0 w-full bg-shpccRed gap-4 py-8 px-6 md:px-12 z-20 ${
             scrolling || open
               ? "bg-[rgba(0,0,0,.9)] transition duration-300 ease-in-out"
