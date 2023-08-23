@@ -195,7 +195,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed extendHomeSpacing min-h-[80vh] relative">
+      <section
+        className="bg-dcfRed extendHomeSpacing min-h-[80vh] relative"
+        id="about-us"
+      >
         <div className="absolute -left-12 h-full my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
           <img
             alt="Cat on Cloud 1"
@@ -304,7 +307,10 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
+      <section
+        className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative"
+        id="games"
+      >
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -492,7 +498,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] extendHomeSpacing flex flex-col items-center text-center relative">
+      <section
+        className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] extendHomeSpacing flex flex-col items-center text-center relative"
+        id="factions"
+      >
         <div className="w-full h-full relative">
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent" />
           <img
@@ -555,7 +564,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-dcfRed extendHomeSpacing pt-24 lg:pt-48 homeSpacing relative">
+      <section
+        className="bg-dcfRed extendHomeSpacing pt-24 lg:pt-48 homeSpacing relative"
+        id="careers"
+      >
         <Image
           alt="Cat on Whale"
           src="/images/whale.png"

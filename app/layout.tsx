@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${lato.variable} ${maistro.variable}`}>
         <Navbar />
         <main className="font-maistro">{children}</main>
