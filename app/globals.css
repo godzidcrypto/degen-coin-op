@@ -25,3 +25,44 @@ body {
 .extendHomeSpacing {
   @apply -mx-8 sm:-mx-16 md:-mx-24;
 }
+
+.button-hover-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    content: ">";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+
+  > p {
+    position: relative;
+    right: 0;
+    transition: right 0.2s linear;
+  }
+
+  &:hover {
+    > p {
+      right: -12px;
+    }
+
+    &:before {
+      transform: scale(1, 1);
+      text-indent: 0;
+    }
+  }
+}

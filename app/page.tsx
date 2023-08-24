@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Socials from "../components/Socials";
+import Link from "next/link";
 
 export default function Home() {
   const factions = [
@@ -112,25 +113,37 @@ export default function Home() {
                 but the reward is even higher
               </span>
             </h1>
-            <button className="uppercase font-bold py-2 px-6 border border-dcfRed rounded max-w-max">
-              Play Degen Spin
-            </button>
+            <Link
+              href={`https://degenspin.com/`}
+              className="uppercase font-bold py-2 px-6 border border-dcfRed rounded max-w-max button-hover-effect"
+            >
+              <p>Play Degen Spin</p>
+            </Link>
           </div>
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent" />
         </div>
         <div className="flex flex-col py-8 gap-2 relative z-20 min-h-[30vh] -mt-36">
-          <div className="w-full h-full font-lato z-30 relative">
+          <div className="w-full h-full font-lato z-30 relative" id="games">
             <p>Our Games</p>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4">
               <div className="grid gap-4">
-                <div className="aspect-video relative">
+                <Link
+                  href={"https://degencoinflip.com"}
+                  target="_blank"
+                  className="aspect-video relative hover:scale-[1.15] hover:z-30 transition duration-300"
+                >
                   <Image
                     alt="Degen Coin Flip"
                     src="/images/dcf.png"
                     className="absolute inset-0 h-full w-full object-cover"
                     layout="fill"
                   />
-                </div>
+                  <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
+                    <p className="font-black text-4xl text-center">
+                      Double Your Sol Instantly
+                    </p>
+                  </div>
+                </Link>
                 <div>
                   <h2 className="font-bold text-xl">Double Or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
@@ -139,7 +152,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="aspect-video relative">
+                <Link
+                  href={"https://degencoindozer.com"}
+                  target="_blank"
+                  className="aspect-video relative hover:scale-[1.125] hover:z-30 transition duration-300"
+                >
                   <Image
                     alt="Degen Coin Dozer"
                     src="/images/dcd.png"
@@ -147,7 +164,12 @@ export default function Home() {
                     layout="fill"
                     loading="lazy"
                   />
-                </div>
+                  <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
+                    <p className="font-black text-4xl text-center">
+                      Play with Friends
+                    </p>
+                  </div>
+                </Link>
                 <div>
                   <h2 className="font-bold text-xl">Drop It Like Its Hot</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
@@ -156,7 +178,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="aspect-video relative">
+                <Link
+                  href={"https://degenspin.com/"}
+                  target="_blank"
+                  className="aspect-video relative hover:scale-[1.15] hover:z-30 transition duration-300"
+                >
                   <Image
                     alt="Degen Spin"
                     src="/images/ds.png"
@@ -164,7 +190,12 @@ export default function Home() {
                     layout="fill"
                     loading="lazy"
                   />
-                </div>
+                  <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
+                    <p className="font-black text-4xl text-center">
+                      Win up to 300x
+                    </p>
+                  </div>
+                </Link>
                 <div>
                   <h2 className="font-bold text-xl">All or Nothing</h2>
                   <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
@@ -173,7 +204,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid gap-4">
-                <div className="aspect-video relative">
+                <Link
+                  href={"#"}
+                  target="_blank"
+                  className="aspect-video relative hover:scale-[1.15] hover:z-30 transition duration-300"
+                >
                   <Image
                     alt="Artificial Cat Intelligence"
                     src="/images/gpt.png"
@@ -181,7 +216,12 @@ export default function Home() {
                     layout="fill"
                     loading="lazy"
                   />
-                </div>
+                  <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
+                    <p className="font-black text-4xl text-center">
+                      Coming Soon
+                    </p>
+                  </div>
+                </Link>
                 <div>
                   <h2 className="font-bold text-xl">
                     Artificial Cat Intelligence
@@ -302,15 +342,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="uppercase text-black bg-white rounded-full p-4 px-16">
-            Build With Us
+          <button className="uppercase text-black bg-white rounded-full p-4 px-16 button-hover-effect">
+            <p>Build With Us</p>
           </button>
         </div>
       </section>
-      <section
-        className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative"
-        id="games"
-      >
+      <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
         <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-4">
             <div>
@@ -328,8 +365,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
-              Play Degen Coin Flip
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+              <p>Play Degen Coin Flip</p>
             </button>
             <Socials
               twitter={"https://twitter.com/degencoinflip"}
@@ -388,8 +425,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
-              Play Degen Coin Dozer
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+              <p>Play Degen Coin Dozer</p>
             </button>
             <Socials
               twitter={"https://twitter.com/degencoinflip"}
@@ -435,8 +472,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
-              Play Degen Spin
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+              <p>Play Degen Spin</p>
             </button>
             <Socials
               twitter={"https://twitter.com/degencoinflip"}
@@ -490,8 +527,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-4">
-            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato">
-              Play Degen Catgpt
+            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+              <p>Play Degen Catgpt</p>
             </button>
             <Socials
               twitter={"https://twitter.com/degencoinflip"}
@@ -597,8 +634,8 @@ export default function Home() {
               sunt enim officia ad cupidatat magna quis nostrud dolore laborum
               qui qui sit do cillum.
             </p>
-            <button className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato">
-              Apply Now
+            <button className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato relative button-hover-effect">
+              <p>Apply Now</p>
             </button>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
