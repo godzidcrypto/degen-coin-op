@@ -139,7 +139,7 @@ export default function Home() {
                     layout="fill"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
-                    <p className="font-black text-4xl text-center">
+                    <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">
                       Double Your Sol Instantly
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function Home() {
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
-                    <p className="font-black text-4xl text-center">
+                    <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">
                       Play with Friends
                     </p>
                   </div>
@@ -191,7 +191,7 @@ export default function Home() {
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
-                    <p className="font-black text-4xl text-center">
+                    <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">
                       Win up to 300x
                     </p>
                   </div>
@@ -217,7 +217,7 @@ export default function Home() {
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
-                    <p className="font-black text-4xl text-center">
+                    <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">
                       Coming Soon
                     </p>
                   </div>
