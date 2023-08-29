@@ -228,7 +228,7 @@ export default function Home() {
                     <DialogContent className="bg-dcfWhite text-black">
                       <DialogHeader>
                         <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
-                          <div className="relative h-[40vh]">
+                          <div className="relative h-[30vh] md:h-[40vh]">
                             <video
                               className="absolute top-0 left-0 w-full h-full object-cover rounded"
                               autoPlay
@@ -240,7 +240,7 @@ export default function Home() {
                             </video>
                           </div>
                           <div className="flex flex-col gap-4">
-                            <h2 className="font-black text-3xl">
+                            <h2 className="font-black text-xl md:text-3xl">
                               Degen Coin Dozer: Drop It Like Its Hot
                             </h2>
                             <p>
@@ -294,7 +294,7 @@ export default function Home() {
                     <DialogContent className="bg-dcfWhite text-black">
                       <DialogHeader>
                         <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
-                          <div className="relative h-[40vh]">
+                          <div className="relative h-[30vh] md:h-[40vh]">
                             <video
                               className="absolute top-0 left-0 w-full h-full object-cover rounded"
                               autoPlay
@@ -306,7 +306,7 @@ export default function Home() {
                             </video>
                           </div>
                           <div className="flex flex-col gap-4">
-                            <h2 className="font-black text-3xl">
+                            <h2 className="font-black text-xl md:text-3xl">
                               Degen Spin: All or Nothing
                             </h2>
                             <p>
@@ -362,7 +362,7 @@ export default function Home() {
                     <DialogContent className="bg-dcfWhite text-black">
                       <DialogHeader>
                         <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
-                          <div className="relative h-[40vh]">
+                          <div className="relative h-[30vh] md:h-[40vh]">
                             <video
                               className="absolute top-0 left-0 w-full h-full object-cover rounded"
                               autoPlay
@@ -374,7 +374,7 @@ export default function Home() {
                             </video>
                           </div>
                           <div className="flex flex-col gap-4">
-                            <h2 className="font-black text-3xl">
+                            <h2 className="font-black text-xl md:text-3xl">
                               Degen Cat GPT
                             </h2>
                             <p>
