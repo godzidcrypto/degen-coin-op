@@ -2,6 +2,15 @@ import Image from "next/image";
 import Socials from "../components/Socials";
 import Link from "next/link";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 export default function Home() {
   const factions = [
     {
@@ -146,9 +155,49 @@ export default function Home() {
                 </Link>
                 <div>
                   <h2 className="font-bold text-xl">Double Or Nothing</h2>
-                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-                    Find out more
-                  </p>
+                  <Dialog>
+                    <DialogTrigger className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                      Find out more
+                    </DialogTrigger>
+                    <DialogContent className="bg-dcfWhite text-black">
+                      <DialogHeader>
+                        <DialogDescription className="grid md:grid-cols-2 gap-8 py-4">
+                          <div className="relative h-[40vh]">
+                            <video
+                              className="absolute top-0 left-0 w-full h-full object-cover rounded"
+                              autoPlay
+                              muted
+                              loop
+                              poster="/images/poster.png"
+                            >
+                              <source src="/nekkro.mp4" type="video/mp4" />
+                            </video>
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <h2 className="font-black text-3xl">
+                              Degen Coin Flip: Double or Nothing
+                            </h2>
+                            <p className="text-justify">
+                              The iconic game that took Solana by storm,
+                              spawning hundreds of copycats across chains. A
+                              decentralized coin flip game where users play on
+                              chain via a smart contract with 50/50 odds. Every
+                              game is logged and verifiable on chain. One of the
+                              top 5 dapps since Solana&apos;s inception.
+                            </p>
+                            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                              <p>Play Degen Coin Flip</p>
+                            </button>
+                            <Socials
+                              twitter={"https://twitter.com/degencoinflip"}
+                              discord={"https://twitter.com/degencoinflip"}
+                              phantom={"https://twitter.com/degencoinflip"}
+                            />
+                          </div>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </div>
               <div className="grid gap-4">
@@ -172,9 +221,49 @@ export default function Home() {
                 </Link>
                 <div>
                   <h2 className="font-bold text-xl">Drop It Like Its Hot</h2>
-                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-                    Find out more
-                  </p>
+                  <Dialog>
+                    <DialogTrigger className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                      Find out more
+                    </DialogTrigger>
+                    <DialogContent className="bg-dcfWhite text-black">
+                      <DialogHeader>
+                        <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
+                          <div className="relative h-[40vh]">
+                            <video
+                              className="absolute top-0 left-0 w-full h-full object-cover rounded"
+                              autoPlay
+                              muted
+                              loop
+                              poster="/images/poster.png"
+                            >
+                              <source src="/nekkro.mp4" type="video/mp4" />
+                            </video>
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <h2 className="font-black text-3xl">
+                              Degen Coin Dozer: Drop It Like Its Hot
+                            </h2>
+                            <p>
+                              Test your timing in this Solana arcade experience.
+                              Drop and push your coin onto a platform and shower
+                              yourself with riches. Degen Coin Op&apos;s 2nd
+                              installment of on chain gaming draws inspiration
+                              from a classic while pushing the technical
+                              boundries of on-hain multiplayer games.
+                            </p>
+                            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                              <p>Play Degen Coin Dozer</p>
+                            </button>
+                            <Socials
+                              twitter={"https://twitter.com/degencoinflip"}
+                              discord={"https://twitter.com/degencoinflip"}
+                              phantom={"https://twitter.com/degencoinflip"}
+                            />
+                          </div>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </div>
               <div className="grid gap-4">
@@ -198,9 +287,49 @@ export default function Home() {
                 </Link>
                 <div>
                   <h2 className="font-bold text-xl">All or Nothing</h2>
-                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-                    Find out more
-                  </p>
+                  <Dialog>
+                    <DialogTrigger className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                      Find out more
+                    </DialogTrigger>
+                    <DialogContent className="bg-dcfWhite text-black">
+                      <DialogHeader>
+                        <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
+                          <div className="relative h-[40vh]">
+                            <video
+                              className="absolute top-0 left-0 w-full h-full object-cover rounded"
+                              autoPlay
+                              muted
+                              loop
+                              poster="/images/poster.png"
+                            >
+                              <source src="/nekkro.mp4" type="video/mp4" />
+                            </video>
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <h2 className="font-black text-3xl">
+                              Degen Spin: All or Nothing
+                            </h2>
+                            <p>
+                              Contact ancient spirits and reveal your fate. The
+                              winds of Nekkro beckon you to a mysterious shrine
+                              and an energy-cackling orb. Will the spirits
+                              accept your offering and return in kind? Land on
+                              matching runes and colors to gain fate&apos;s
+                              favor and win up to 300X
+                            </p>
+                            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                              <p>Spin To Win</p>
+                            </button>
+                            <Socials
+                              twitter={"https://twitter.com/degencoinflip"}
+                              discord={"https://twitter.com/degencoinflip"}
+                              phantom={"https://twitter.com/degencoinflip"}
+                            />
+                          </div>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </div>
               <div className="grid gap-4">
@@ -226,9 +355,49 @@ export default function Home() {
                   <h2 className="font-bold text-xl">
                     Artificial Cat Intelligence
                   </h2>
-                  <p className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
-                    Find out more
-                  </p>
+                  <Dialog>
+                    <DialogTrigger className="border-b-2 border-dcfRed max-w-max text-xs font-bold">
+                      Find out more
+                    </DialogTrigger>
+                    <DialogContent className="bg-dcfWhite text-black">
+                      <DialogHeader>
+                        <DialogDescription className="grid md:grid-cols-2 gap-8 py-4 text-justify">
+                          <div className="relative h-[40vh]">
+                            <video
+                              className="absolute top-0 left-0 w-full h-full object-cover rounded"
+                              autoPlay
+                              muted
+                              loop
+                              poster="/images/poster.png"
+                            >
+                              <source src="/nekkro.mp4" type="video/mp4" />
+                            </video>
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <h2 className="font-black text-3xl">
+                              Degen Cat GPT
+                            </h2>
+                            <p>
+                              Solana’s very first AI powered text based game.
+                              Complete quests with your own input. Play as a
+                              Jester tasked with acquiring a rare Jewel, or
+                              become a Knight in the woods protecting the
+                              defenseless. Create your story Choose your
+                              adventure.
+                            </p>
+                            <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                              <p>Polishing Up</p>
+                            </button>
+                            <Socials
+                              twitter={"https://twitter.com/degencoinflip"}
+                              discord={"https://twitter.com/degencoinflip"}
+                              phantom={"https://twitter.com/degencoinflip"}
+                            />
+                          </div>
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </div>
             </div>
@@ -357,11 +526,11 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              A decentralized cryptocurrency game built on Solana where users
-              can play a virtual coin flip game via a smart contract with 50/50
-              odds and a 3.5% fee. Every game is logged on chain and verifiable.
-              The game is built by Degen Coin Op, a technology services
-              provider.
+              The iconic game that took Solana by storm, spawning hundreds of
+              copycats across chains. A decentralized coin flip game where users
+              play on chain via a smart contract with 50/50 odds. Every game is
+              logged and verifiable on chain. One of the top 5 dapps since
+              Solana&apos;s inception.
             </p>
           </div>
           <div className="grid gap-4">
@@ -417,11 +586,11 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              A cryptocurrency game built on Solana that is similar to the
-              classic arcade game where players push coins off a platform to win
-              prizes. Users can play the game via a smart contract and every
-              game is logged on chain and verifiable. This game was built by
-              Omega, a Web3 developer and holder of Degen Fat Cats NFT.
+              Test your timing in this Solana arcade experience. Drop and push
+              your coin onto a platform and shower yourself with riches. Degen
+              Coin Op&apos;s 2nd installment of on chain gaming draws
+              inspiration from a classic while pushing the technical boundries
+              of on-hain multiplayer games.
             </p>
           </div>
           <div className="grid gap-4">
@@ -625,18 +794,22 @@ export default function Home() {
               alt="Degen Coin Op Logo"
             />
             <h2 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-              We make degen games <p className="text-black">join us.</p>
+              You focus on building fun games and we&apos;ll take care of the
+              rest.
             </h2>
             <p className="font-lato">
-              Labore officia voluptate incididunt nostrud nulla Lorem est.
-              Fugiat esse sunt ex anim in aliquip do ullamco tempor ullamco sunt
-              incididunt fugiat. Elit ullamco sunt sit excepteur cillum. Commodo
-              sunt enim officia ad cupidatat magna quis nostrud dolore laborum
-              qui qui sit do cillum.
+              If you&apos;re interested in building fun degen games, talk to us!
+              Our on chain games have been played 20 million times with over
+              100k+ unique players. If you have an idea you want to bring to
+              life, we&apos;ll care of marketing, liquidity, legal, and smart
+              contract security.
             </p>
-            <button className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato relative button-hover-effect">
+            <Link
+              href={`https://forms.gle/inVwK6B7a2zY2E2t5`}
+              className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato relative button-hover-effect"
+            >
               <p>Apply Now</p>
-            </button>
+            </Link>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="grid gap-4 rounded bg-dcfWhite text-black p-8">
