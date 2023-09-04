@@ -629,15 +629,11 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              A Solana-based game that is similar to slots. Players can offer
-              anywhere from .05 to 1 SOL to a magic necromancer shrine. The
-              shrine has runes that pop up and fly around a magic ball, and when
-              the ball explodes, it gives players three runes as a result. Runes
-              can be common, rare, or super rare, with each rune having a
-              faction associated with it. Some factions are more valuable than
-              others. Players receive a bonus when they hit 2 of the same runes
-              with the same faction and a bigger bonus if they hit 3 of the same
-              runes with the same faction.
+              Contact ancient spirits and reveal your fate. The winds of Nekkro
+              beckon you to a mysterious shrine and an energy-cackling orb. Will
+              the spirits accept your offering and return in kind? Land on
+              matching runes and colors to gain fate&apos;s favor and win up to
+              300X
             </p>
           </div>
           <div className="grid gap-4">
@@ -689,10 +685,10 @@ export default function Home() {
               </h1>
             </div>
             <p className="leading-7 font-lato">
-              Degen Cat GPT is a new game offering that uses AI to create fun
-              and unique storylines and quests for users. This text-based
-              adventure game uses AI to create new and exciting experiences each
-              time and allows users to input their own decisions and choices
+              Solana’s very first AI powered text based game. Complete quests
+              with your own input. Play as a Jester tasked with acquiring a rare
+              Jewel, or become a Knight in the woods protecting the defenseless.
+              Create your story Choose your adventure.
             </p>
           </div>
           <div className="grid gap-4">
@@ -806,6 +802,7 @@ export default function Home() {
             </p>
             <Link
               href={`https://forms.gle/inVwK6B7a2zY2E2t5`}
+              target="_blank"
               className="bg-dcfWhite text-black uppercase font-bold p-4 max-w-max text-xl rounded tracking-widest font-lato relative button-hover-effect"
             >
               <p>Apply Now</p>
