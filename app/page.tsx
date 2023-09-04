@@ -116,7 +116,7 @@ export default function Home() {
             <source src="/nekkro.mp4" type="video/mp4" />
           </video>
           <div className="absolute flex flex-col justify-center homeSpacing gap-6">
-            <h1 className="uppercase font-semibold max-w-xl">
+            <h1 className="uppercase font-semibold max-w-[40rem]">
               The cost of ambition is high <br />
               <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                 but the reward is even higher

@@ -26,6 +26,10 @@
     @apply -mx-8 sm:-mx-16 md:-mx-24;
   }
 
+  .font-lato {
+    @apply tracking-normal;
+  }
+
   .button-hover-effect {
     position: relative;
     overflow: hidden;

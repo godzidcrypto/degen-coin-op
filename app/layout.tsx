@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${lato.variable} ${maistro.variable}`}>
         <Navbar />
-        <main className="font-maistro">{children}</main>
+        <main className="font-maistro tracking-[0.2em]">{children}</main>
         <Footer />
       </body>
     </html>
