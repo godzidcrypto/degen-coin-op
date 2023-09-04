@@ -464,9 +464,7 @@ export default function Home() {
               </div>
               <div className="font-lato">
                 <span className="uppercase font-bold text-3xl">23 Million</span>
-                <p className="uppercase font-light text-sm">
-                  Monthly Active Users
-                </p>
+                <p className="uppercase font-light text-sm">Unique Players</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
@@ -486,9 +484,7 @@ export default function Home() {
               </div>
               <div className="font-lato">
                 <span className="uppercase font-bold text-3xl">10 Million</span>
-                <p className="uppercase font-light text-sm">
-                  Solana Transactions
-                </p>
+                <p className="uppercase font-light text-sm">Sol Flipped</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
