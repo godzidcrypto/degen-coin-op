@@ -11,7 +11,30 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export default function Home() {
+async function fetchStats() {
+  try {
+    const res = await fetch("https://api.degencointracker.com/v1/game-stats");
+    const stats = await res.json();
+    console.log(stats.payload);
+    return stats;
+  } catch (error) {
+    return {};
+  }
+}
+
+export default async function Home() {
+  const stats: any = await fetchStats();
+
+  function formatNumber(number: number) {
+    if (number >= 1000000) {
+      return (number / 1000000).toFixed(1) + " m";
+    } else if (number >= 1000) {
+      return (number / 1000).toFixed(1) + " k";
+    } else {
+      return number.toString();
+    }
+  }
+
   const factions = [
     {
       name: "Merchant",
@@ -102,6 +125,7 @@ export default function Home() {
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/355.png",
     },
   ];
+
   return (
     <div className="homeSpacing">
       <section className="flex flex-col justify-between min-h-[90vh]">
@@ -449,9 +473,9 @@ export default function Home() {
                   <g
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   >
                     <circle cx="12" cy="8" r="5" fill="currentColor" />
                     <path d="M20 21a8 8 0 1 0-16 0" />
@@ -463,7 +487,9 @@ export default function Home() {
                 </svg>
               </div>
               <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">23 Million</span>
+                <span className="uppercase font-bold text-3xl">
+                  {formatNumber(stats.payload[0]?.uniquePlays)}
+                </span>
                 <p className="uppercase font-light text-sm">Unique Players</p>
               </div>
             </div>
@@ -477,13 +503,15 @@ export default function Home() {
                 >
                   <path
                     fill="currentColor"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M2.45 6.76h9.59c.12 0 .23.05.32.14l1.52 1.56c.28.29.08.78-.32.78H3.97c-.12 0-.23-.05-.32-.14L2.13 7.54c-.28-.29-.08-.78.32-.78Zm-.32-2.07l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78l-1.51 1.56c-.08.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78Zm11.74 6.61l-1.52 1.56c-.09.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78Z"
                   />
                 </svg>
               </div>
               <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">10 Million</span>
+                <span className="uppercase font-bold text-3xl">
+                  {formatNumber(stats.payload[0]?.totalSol)}
+                </span>
                 <p className="uppercase font-light text-sm">Sol Flipped</p>
               </div>
             </div>
@@ -502,7 +530,9 @@ export default function Home() {
                 </svg>
               </div>
               <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">17 Million</span>
+                <span className="uppercase font-bold text-3xl">
+                  {formatNumber(stats.payload[0]?.totalPlays)}
+                </span>
                 <p className="uppercase font-light text-sm">Games Played</p>
               </div>
             </div>
@@ -815,8 +845,8 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
                     fill="currentColor"
                   />
@@ -845,8 +875,8 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
                     fill="currentColor"
                   />
@@ -875,8 +905,8 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
                     fill="currentColor"
                   />
@@ -905,8 +935,8 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
                     fill="currentColor"
                   />
