@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent" />
         </div>
-        <div className="flex flex-col py-8 gap-2 relative z-20 min-h-[30vh] -mt-36">
+        <div className="flex flex-col py-8 gap-2 relative z-20 min-h-[30vh] -mt-6 sm:-mt-12 md:-mt-24 lg:-mt-36">
           <div className="w-full h-full font-lato z-30 relative" id="games">
             <p>Our Games</p>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4">
