@@ -702,7 +702,7 @@ export default async function Home() {
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col justify-between gap-4 order-first md:order-last">
+        <div className="flex flex-col justify-between gap-4 order-first md:order-last z-20">
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Cat GPT</h2>
