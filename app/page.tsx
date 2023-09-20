@@ -102,7 +102,8 @@ export default function Home() {
     },
     {
       name: "OG",
-      description: "???",
+      description:
+        "Anchored in the annals of Mau's history, the OG Fat Cats, known as the DFC Pantheon, are a celestial 555 who once stood as pillars of strength and unity. These enigmatic cats, revered by many, tread where others dare not and have transcended the very skies that others merely gaze upon.",
       img: "https://degenfatcats-theta.s3.us-east-2.amazonaws.com/assets-fs/355.png",
     },
   ];
