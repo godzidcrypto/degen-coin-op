@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Socials from "../components/Socials";
 import Link from "next/link";
+import AboutUs from "../components/AboutUs";
+import { motion } from "framer-motion";
 
 import {
   Dialog,
@@ -11,30 +15,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-async function fetchStats() {
-  try {
-    const res = await fetch("https://api.degencointracker.com/v1/game-stats");
-    const stats = await res.json();
-    console.log(stats.payload);
-    return stats;
-  } catch (error) {
-    return {};
-  }
-}
-
-export default async function Home() {
-  const stats: any = await fetchStats();
-
-  function formatNumber(number: number) {
-    if (number >= 1000000) {
-      return (number / 1000000).toFixed(1) + " m";
-    } else if (number >= 1000) {
-      return (number / 1000).toFixed(1) + " k";
-    } else {
-      return number.toString();
-    }
-  }
-
+export default function Home() {
   const factions = [
     {
       name: "Merchant",
@@ -139,7 +120,13 @@ export default async function Home() {
           >
             <source src="/nekkro.mp4" type="video/mp4" />
           </video>
-          <div className="absolute flex flex-col justify-center homeSpacing gap-6">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="absolute flex flex-col justify-center homeSpacing gap-6"
+          >
             <h1 className="uppercase font-semibold max-w-[40rem]">
               The cost of ambition is high <br />
               <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -152,11 +139,18 @@ export default async function Home() {
             >
               <p>Play Degen Spin</p>
             </Link>
-          </div>
+          </motion.div>
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent" />
         </div>
         <div className="flex flex-col py-8 gap-2 relative z-20 min-h-[30vh] -mt-6 sm:-mt-12 md:-mt-24 lg:-mt-36">
-          <div className="w-full h-full font-lato z-30 relative" id="games">
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="w-full h-full font-lato z-30 relative"
+            id="games"
+          >
             <p>Our Games</p>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4">
               <div className="grid gap-4">
@@ -425,125 +419,18 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section
-        className="bg-dcfRed extendHomeSpacing min-h-[80vh] relative"
-        id="about-us"
-      >
-        <div className="absolute -left-12 h-full my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
-          <img
-            alt="Cat on Cloud 1"
-            src="/images/adam-left.png"
-            className="h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div className="absolute right-0 h-[80%] my-auto w-auto top-0 bottom-0 opacity-20 lg:opacity-50 xl:opacity-100">
-          <img
-            alt="Cat on Cloud 2"
-            src="/images/adam-right.png"
-            className="h-full object-contain"
-            loading="lazy"
-          />
-        </div>
-        <div className="flex flex-col gap-8 justify-center items-center text-center min-h-[80vh] relative z-20 px-0 md:px-8 py-8 md:py-0">
-          <Image
-            width={400}
-            height={400}
-            src="/images/logo-main.png"
-            alt="Degen Coin Op Logo"
-            className="w-auto scale-100 md:scale-[2]"
-          />
-          <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl max-w-xl">
-            <span className="text-sm">About Us</span>
-            <br />
-            The Best Solana People Making The Best Games
-          </h1>
-          <div className="grid md:grid-cols-3 gap-4 md:gap-24">
-            <div className="flex flex-col items-center">
-              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  >
-                    <circle cx="12" cy="8" r="5" fill="currentColor" />
-                    <path d="M20 21a8 8 0 1 0-16 0" />
-                    <path
-                      fill="currentColor"
-                      d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8z"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">
-                  {formatNumber(stats.payload[0]?.uniquePlays)}
-                </span>
-                <p className="uppercase font-light text-sm">Unique Players</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill="currentColor"
-                    fillRule="evenodd"
-                    d="M2.45 6.76h9.59c.12 0 .23.05.32.14l1.52 1.56c.28.29.08.78-.32.78H3.97c-.12 0-.23-.05-.32-.14L2.13 7.54c-.28-.29-.08-.78.32-.78Zm-.32-2.07l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78l-1.51 1.56c-.08.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78Zm11.74 6.61l-1.52 1.56c-.09.09-.2.14-.32.14H2.45c-.4 0-.6-.49-.32-.78l1.52-1.56c.08-.09.2-.14.32-.14h9.58c.4 0 .6.49.32.78Z"
-                  />
-                </svg>
-              </div>
-              <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">
-                  {formatNumber(stats.payload[0]?.totalSol)}
-                </span>
-                <p className="uppercase font-light text-sm">Sol Flipped</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-black text-dcfRed rounded-full p-2 max-w-max">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M592 192H473.26c12.69 29.59 7.12 65.2-17 89.32L320 417.58V464c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48V240c0-26.51-21.49-48-48-48zM480 376c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm-46.37-186.7L258.7 14.37c-19.16-19.16-50.23-19.16-69.39 0L14.37 189.3c-19.16 19.16-19.16 50.23 0 69.39L189.3 433.63c19.16 19.16 50.23 19.16 69.39 0L433.63 258.7c19.16-19.17 19.16-50.24 0-69.4zM96 248c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"
-                  />
-                </svg>
-              </div>
-              <div className="font-lato">
-                <span className="uppercase font-bold text-3xl">
-                  {formatNumber(stats.payload[0]?.totalPlays)}
-                </span>
-                <p className="uppercase font-light text-sm">Games Played</p>
-              </div>
-            </div>
-          </div>
-          <button className="uppercase text-black bg-white rounded-full p-4 px-16 button-hover-effect">
-            <p>Build With Us</p>
-          </button>
-        </div>
-      </section>
+      <AboutUs />
       <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative">
-        <div className="flex flex-col justify-between gap-4">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, margin: "-400px" }}
+          className="flex flex-col justify-between gap-4"
+        >
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Flip</h2>
@@ -569,9 +456,13 @@ export default async function Home() {
               phantom={"https://twitter.com/degencoinflip"}
             />
           </div>
-        </div>
+        </motion.div>
         <div>
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true, margin: "-400px" }}
             alt="Degen Coin Flip Preview"
             src="/images/dcf-phone.png"
             className="absolute left-0 bottom-0 md:left-auto md:bottom-auto xl:-bottom-12 h-0 md:h-[70%] xl:h-full object-contain z-30"
@@ -589,13 +480,21 @@ export default async function Home() {
         <div></div>
         <div className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full">
           <div className="md:relative">
-            <img
+            <motion.img
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, margin: "-400px" }}
               alt="Degen Coin Dozer Preview"
               src="/images/dcd-phone.png"
               className="object-contain w-60 md:w-[60%] bottom-0 absolute md:relative"
               loading="lazy"
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.5 }}
+              viewport={{ once: true, margin: "-400px" }}
               alt="Purple DCD Cat"
               src="/images/purple-dcd-cat.png"
               className="absolute md:left-0 md:-top-16 lg:-top-24 -bottom-[1.7rem] right-0 z-30 w-40 md:w-64 lg:w-auto"
@@ -603,7 +502,13 @@ export default async function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-between gap-4 order-first md:order-last z-20">
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, margin: "-400px" }}
+          className="flex flex-col justify-between gap-4 order-first md:order-last z-20"
+        >
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Coin Dozer</h2>
@@ -629,7 +534,7 @@ export default async function Home() {
               phantom={"https://twitter.com/degencoinflip"}
             />
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 extendHomeSpacing relative overflow-hidden lg:overflow-visible">
         <div className="absolute w-full h-full">
@@ -646,7 +551,13 @@ export default async function Home() {
           className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-12 md:-right-36 -bottom-28 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
           loading="lazy"
         />
-        <div className="flex flex-col justify-between gap-4 relative z-30">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, margin: "-400px" }}
+          className="flex flex-col justify-between gap-4 relative z-30"
+        >
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Spin</h2>
@@ -672,9 +583,13 @@ export default async function Home() {
               phantom={"https://twitter.com/degencoinflip"}
             />
           </div>
-        </div>
+        </motion.div>
         <div>
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true, margin: "-400px" }}
             alt="Degen Spin Preview"
             src="/images/ds-phone.png"
             className="absolute bottom-12 lg:-bottom-12 lg:right-0 xl:right-48 h-0 md:h-[70%] lg:h-full object-contain z-30"
@@ -684,7 +599,13 @@ export default async function Home() {
       </section>
       <section className="min-h-[70vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid md:grid-cols-2 gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
         <div></div>
-        <div className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, margin: "-400px" }}
+          className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full"
+        >
           <div className="md:relative">
             <img
               alt="Cat GPT Preview"
@@ -693,7 +614,7 @@ export default async function Home() {
               loading="lazy"
             />
           </div>
-        </div>
+        </motion.div>
         <div className="absolute right-0 bottom-0">
           <img
             alt="Cat Hat"
@@ -702,7 +623,13 @@ export default async function Home() {
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col justify-between gap-4 order-first md:order-last z-20">
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, margin: "-400px" }}
+          className="flex flex-col justify-between gap-4 order-first md:order-last z-20"
+        >
           <div className="grid gap-4">
             <div>
               <h2 className="text-xl uppercase">Degen Cat GPT</h2>
@@ -727,7 +654,7 @@ export default async function Home() {
               phantom={"https://twitter.com/degencoinflip"}
             />
           </div>
-        </div>
+        </motion.div>
       </section>
       <section
         className="bg-gradient-to-b from-[#3D2975] to-[#1F1842] extendHomeSpacing flex flex-col items-center text-center relative"
@@ -771,7 +698,11 @@ export default async function Home() {
             {factions.map((faction, index) => {
               const { name, description, img } = faction;
               return (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 200 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
                   key={index}
                   className="grid sm:flex sm:flex-col lg:grid lg:grid-cols-[1fr_3fr] text-left gap-4"
                 >
@@ -789,7 +720,7 @@ export default async function Home() {
                     </h3>
                     <p className="font-lato">{description}</p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -807,7 +738,13 @@ export default async function Home() {
           height={500}
           // layout="fill"
         />
-        <div className="grid lg:grid-cols-[1fr_2fr] xl:grid-cols-2 gap-12 z-30 relative">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="grid lg:grid-cols-[1fr_2fr] xl:grid-cols-2 gap-12 z-30 relative"
+        >
           <div className="flex flex-col gap-8">
             <Image
               width={200}
@@ -956,7 +893,7 @@ export default async function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="relative h-screen extendHomeSpacing -mt-36">
           <Image
             alt="Clouds"
