@@ -428,7 +428,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true, margin: "-400px" }}
+          viewport={{ once: true }}
           className="flex flex-col justify-between gap-4"
         >
           <div className="grid gap-4">
@@ -462,7 +462,7 @@ export default function Home() {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
-            viewport={{ once: true, margin: "-400px" }}
+            viewport={{ once: true }}
             alt="Degen Coin Flip Preview"
             src="/images/dcf-phone.png"
             className="absolute left-0 bottom-0 md:left-auto md:bottom-auto xl:-bottom-12 h-0 md:h-[70%] xl:h-full object-contain z-30"
@@ -484,7 +484,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5 }}
-              viewport={{ once: true, margin: "-400px" }}
+              viewport={{ once: true }}
               alt="Degen Coin Dozer Preview"
               src="/images/dcd-phone.png"
               className="object-contain w-60 md:w-[60%] bottom-0 absolute md:relative"
@@ -494,7 +494,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5 }}
-              viewport={{ once: true, margin: "-400px" }}
+              viewport={{ once: true }}
               alt="Purple DCD Cat"
               src="/images/purple-dcd-cat.png"
               className="absolute md:left-0 md:-top-16 lg:-top-24 -bottom-[1.7rem] right-0 z-30 w-40 md:w-64 lg:w-auto"
@@ -506,7 +506,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true, margin: "-400px" }}
+          viewport={{ once: true }}
           className="flex flex-col justify-between gap-4 order-first md:order-last z-20"
         >
           <div className="grid gap-4">
@@ -555,7 +555,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true, margin: "-400px" }}
+          viewport={{ once: true }}
           className="flex flex-col justify-between gap-4 relative z-30"
         >
           <div className="grid gap-4">
@@ -589,7 +589,7 @@ export default function Home() {
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}
-            viewport={{ once: true, margin: "-400px" }}
+            viewport={{ once: true }}
             alt="Degen Spin Preview"
             src="/images/ds-phone.png"
             className="absolute bottom-12 lg:-bottom-12 lg:right-0 xl:right-48 h-0 md:h-[70%] lg:h-full object-contain z-30"
@@ -603,7 +603,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true, margin: "-400px" }}
+          viewport={{ once: true }}
           className="absolute left-0 h-[50%] md:my-auto md:top-0 bottom-0 w-full"
         >
           <div className="md:relative">
@@ -627,7 +627,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true, margin: "-400px" }}
+          viewport={{ once: true }}
           className="flex flex-col justify-between gap-4 order-first md:order-last z-20"
         >
           <div className="grid gap-4">

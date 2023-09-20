@@ -44,7 +44,7 @@ const AboutUs = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        viewport={{ once: true, margin: "-400px" }}
+        viewport={{ once: true }}
         className="flex flex-col gap-8 justify-center items-center text-center min-h-[80vh] relative z-20 px-0 md:px-8 py-8 md:py-0"
       >
         <Image
