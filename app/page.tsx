@@ -470,7 +470,11 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        <img
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
           alt="Cat Flipping a Coin"
           src="/images/flip.png"
           className="absolute bottom-0 right-0 h-[20%] lg:h-[30%] object-contain -scale-x-100"
@@ -492,8 +496,8 @@ export default function Home() {
               loading="lazy"
             />
             <motion.img
-              initial={{ opacity: 0, x: -200 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}
               alt="Purple DCD Cat"
@@ -546,7 +550,11 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-        <img
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
           alt="Ghost Cat"
           src="/images/ghost.png"
           className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-12 md:-right-36 -bottom-28 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
@@ -617,7 +625,11 @@ export default function Home() {
           </div>
         </motion.div>
         <div className="absolute right-0 bottom-0">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
             alt="Cat Hat"
             src="/images/ai-hat.png"
             className="h-24 md:h-full object-contain my-auto top-0 bottom-0"
