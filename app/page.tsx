@@ -164,7 +164,8 @@ export default function Home() {
                     alt="Degen Coin Flip"
                     src="/images/dcf.png"
                     className="absolute inset-0 h-full w-full object-cover"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 600px) 100vw, 600px"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
                     <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center">
@@ -229,7 +230,8 @@ export default function Home() {
                     alt="Degen Coin Dozer"
                     src="/images/dcd.png"
                     className="absolute inset-0 h-full w-full object-cover"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 600px) 100vw, 600px"
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
@@ -295,7 +297,8 @@ export default function Home() {
                     alt="Degen Spin"
                     src="/images/ds.png"
                     className="absolute inset-0 h-full w-full object-cover"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 600px) 100vw, 600px"
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
@@ -361,7 +364,8 @@ export default function Home() {
                     alt="Artificial Cat Intelligence"
                     src="/images/gpt.png"
                     className="absolute inset-0 h-full w-full object-cover"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 600px) 100vw, 600px"
                     loading="lazy"
                   />
                   <div className="bg-[rgba(0,0,0,.7)] h-full w-full opacity-0 hover:opacity-100 z-30 absolute transition duration-300 ease-in-out flex justify-center items-center">
@@ -558,7 +562,6 @@ export default function Home() {
           alt="Ghost Cat"
           src="/images/ghost.png"
           className="w-64 md:w-72 lg:w-80 lg:-scale-x-100 -rotate-[25deg] lg:rotate-[25deg] absolute -right-12 md:-right-36 -bottom-28 top-auto md:top-0 lg:top-auto lg:-left-36 lg:bottom-24"
-          loading="lazy"
         />
         <motion.div
           initial={{ opacity: 0, x: -200 }}
@@ -724,7 +727,8 @@ export default function Home() {
                       alt={`${name} Fat Cat`}
                       src={img}
                       className="absolute inset-0 h-full w-full object-cover scale-150"
-                      layout="fill"
+                      fill
+                      sizes="(max-width: 600px) 100vw, 600px"
                     />
                   </div>
                   <div className="flex flex-col gap-4">
@@ -749,7 +753,6 @@ export default function Home() {
           className="absolute w-64 -top-40 right-0 lg:right-36 -scale-x-100"
           width={500}
           height={500}
-          // layout="fill"
         />
         <motion.div
           initial={{ opacity: 0, y: 200 }}
@@ -912,7 +915,8 @@ export default function Home() {
             alt="Clouds"
             src="/images/bottom.png"
             className="absolute inset-0 h-full w-full object-cover"
-            layout="fill"
+            fill
+            sizes="(max-width: 600px) 100vw, 600px"
           />
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#263D67] to-transparent" />
         </div>
