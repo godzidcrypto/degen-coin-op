@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { careers } from "@/lib/constants";
 
 const Careers = () => {
   return (
@@ -49,126 +50,40 @@ const Careers = () => {
           </Link>
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
-          <div className="grid gap-4 rounded bg-dcfWhite text-black p-8">
-            <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          {careers.map((career, index) => {
+            const { title, description, isActive } = career;
+            return (
+              <div
+                className={`grid gap-4 rounded bg-dcfWhite text-black p-8 ${
+                  isActive ? "" : "opacity-40"
+                }`}
+                key={index}
               >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <h3 className="text-3xl font-bold font-lato">
-              Front End Developer
-            </h3>
-            <p className="font-light text-sm font-lato">
-              Sit deserunt voluptate incididunt elit consequat qui proident
-              consequat esse enim. Pariatur veniam excepteur sint exercitation
-              occaecat duis magna ipsum laborum elit in ad et mollit.
-            </p>
-          </div>
-          <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
-            <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <h3 className="text-3xl font-bold font-lato">
-              Front End Developer
-            </h3>
-            <p className="font-light text-sm font-lato">
-              Sit deserunt voluptate incididunt elit consequat qui proident
-              consequat esse enim. Pariatur veniam excepteur sint exercitation
-              occaecat duis magna ipsum laborum elit in ad et mollit.
-            </p>
-          </div>
-          <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
-            <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <h3 className="text-3xl font-bold font-lato">
-              Front End Developer
-            </h3>
-            <p className="font-light text-sm font-lato">
-              Sit deserunt voluptate incididunt elit consequat qui proident
-              consequat esse enim. Pariatur veniam excepteur sint exercitation
-              occaecat duis magna ipsum laborum elit in ad et mollit.
-            </p>
-          </div>
-          <div className="grid gap-4 rounded bg-dcfWhite text-black p-8 opacity-40">
-            <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <h3 className="text-3xl font-bold font-lato">
-              Front End Developer
-            </h3>
-            <p className="font-light text-sm font-lato">
-              Sit deserunt voluptate incididunt elit consequat qui proident
-              consequat esse enim. Pariatur veniam excepteur sint exercitation
-              occaecat duis magna ipsum laborum elit in ad et mollit.
-            </p>
-          </div>
+                <div className="bg-dcfRed rounded-full p-2 max-w-max text-white">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-3xl font-bold font-lato">{title}</h3>
+                <p className="font-light text-sm font-lato">{description}</p>
+              </div>
+            );
+          })}
         </div>
       </motion.div>
       <div className="relative h-screen extendHomeSpacing -mt-36">
