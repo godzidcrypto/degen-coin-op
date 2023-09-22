@@ -49,10 +49,14 @@ const Navbar = () => {
           <Link href={"#factions"}>Degen Fat Cats</Link>
           <Link href={"#careers"}>Careers</Link>
         </div>
-        <button className="rounded-full p-2 px-3 bg-[#312966] flex items-center gap-4 text-[#C4C2D2]">
+        <Link
+          href={`https://phantom.app/download`}
+          target="_blank"
+          className="rounded-full p-2 px-3 bg-[#312966] flex items-center gap-4 text-[#C4C2D2] hover:scale-110 hover:bg-[#A89EEA] hover:text-white duration-500 transition"
+        >
           <img src="/images/phantom.png" alt="Phantom Icon" className="w-8" />
           Download Phantom
-        </button>
+        </Link>
       </nav>
       {/* mobile nav */}
       <nav

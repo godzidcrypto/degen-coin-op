@@ -1,5 +1,7 @@
 import Socials from "../../Socials";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { DFC_TWITTER_URL, DFC_DISCORD_URL } from "@/lib/constants";
 
 const DCG = () => {
   return (
@@ -55,13 +57,17 @@ const DCG = () => {
           </p>
         </div>
         <div className="grid gap-4">
-          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
-            <p>Play Degen Catgpt</p>
-          </button>
+          <Link
+            href={"#"}
+            target="_blank"
+            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+          >
+            <p>Polishing Up</p>
+          </Link>
           <Socials
-            twitter={"https://twitter.com/degencoinflip"}
-            discord={"https://twitter.com/degencoinflip"}
-            phantom={"https://twitter.com/degencoinflip"}
+            twitter={DFC_TWITTER_URL}
+            discord={DFC_DISCORD_URL}
+            phantom={"#"}
           />
         </div>
       </motion.div>

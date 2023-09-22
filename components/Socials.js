@@ -3,7 +3,11 @@ import Link from "next/link";
 const Socials = ({ twitter, discord, phantom }) => {
   return (
     <div className="flex gap-4">
-      <Link href={twitter}>
+      <Link
+        href={twitter}
+        target="_blank"
+        className="hover:scale-125 duration-500 transition hover:text-dcfRed"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -16,7 +20,11 @@ const Socials = ({ twitter, discord, phantom }) => {
           />
         </svg>
       </Link>
-      <Link href={discord} target="_blank">
+      <Link
+        href={discord}
+        target="_blank"
+        className="hover:scale-125 duration-500 transition hover:text-dcfRed"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -29,7 +37,11 @@ const Socials = ({ twitter, discord, phantom }) => {
           />
         </svg>
       </Link>
-      <Link href={phantom} target="_blank">
+      <Link
+        href={phantom}
+        target="_blank"
+        className="hover:scale-125 duration-500 transition hover:text-dcfRed"
+      >
         <svg
           width="36"
           height="36"

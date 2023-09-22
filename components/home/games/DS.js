@@ -1,5 +1,11 @@
 import Socials from "../../Socials";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import {
+  DS_URL,
+  NEKKRO_TWITTER_URL,
+  NEKKRO_DISCORD_URL,
+} from "@/lib/constants";
 
 const DS = () => {
   return (
@@ -44,13 +50,17 @@ const DS = () => {
           </p>
         </div>
         <div className="grid gap-4">
-          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
-            <p>Play Degen Spin</p>
-          </button>
+          <Link
+            href={DS_URL}
+            target="_blank"
+            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+          >
+            <p>Spin To Win</p>
+          </Link>
           <Socials
-            twitter={"https://twitter.com/degencoinflip"}
-            discord={"https://twitter.com/degencoinflip"}
-            phantom={"https://twitter.com/degencoinflip"}
+            twitter={NEKKRO_TWITTER_URL}
+            discord={NEKKRO_DISCORD_URL}
+            phantom={DS_URL}
           />
         </div>
       </motion.div>

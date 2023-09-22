@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import useSWR from "swr";
 import { motion } from "framer-motion";
 
@@ -141,9 +142,13 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <button className="uppercase text-black bg-white rounded-full p-4 px-16 button-hover-effect">
+        <Link
+          href={`https://forms.gle/inVwK6B7a2zY2E2t5`}
+          target="_blank"
+          className="uppercase text-black bg-white rounded-full p-4 px-16 button-hover-effect"
+        >
           <p>Build With Us</p>
-        </button>
+        </Link>
       </motion.div>
     </section>
   );

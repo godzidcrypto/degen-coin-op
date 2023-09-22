@@ -9,6 +9,17 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import {
+  DCF_URL,
+  DCD_URL,
+  DS_URL,
+  DFC_DISCORD_URL,
+  DCF_TWITTER_URL,
+  DFC_TWITTER_URL,
+  NEKKRO_DISCORD_URL,
+  NEKKRO_TWITTER_URL,
+} from "@/lib/constants";
+import { DCF } from "./games";
 
 const Hero = () => {
   return (
@@ -37,7 +48,7 @@ const Hero = () => {
             </span>
           </h1>
           <Link
-            href={`https://degenspin.com/`}
+            href={DS_URL}
             className="uppercase font-bold py-2 px-6 border border-dcfRed rounded max-w-max button-hover-effect"
           >
             <p>Play Degen Spin</p>
@@ -58,7 +69,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4">
             <div className="grid gap-4">
               <Link
-                href={"https://degencoinflip.com"}
+                href={DCF_URL}
                 target="_blank"
                 className="aspect-video relative hover:scale-[1.15] hover:z-30 transition duration-300"
               >
@@ -107,13 +118,17 @@ const Hero = () => {
                             verifiable on chain. One of the top 5 dapps since
                             Solana&apos;s inception.
                           </p>
-                          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                          <Link
+                            href={DCF_URL}
+                            target="_blank"
+                            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+                          >
                             <p>Play Degen Coin Flip</p>
-                          </button>
+                          </Link>
                           <Socials
-                            twitter={"https://twitter.com/degencoinflip"}
-                            discord={"https://twitter.com/degencoinflip"}
-                            phantom={"https://twitter.com/degencoinflip"}
+                            twitter={DCF_TWITTER_URL}
+                            discord={DFC_DISCORD_URL}
+                            phantom={DCF_URL}
                           />
                         </div>
                       </DialogDescription>
@@ -124,7 +139,7 @@ const Hero = () => {
             </div>
             <div className="grid gap-4">
               <Link
-                href={"https://degencoindozer.com"}
+                href={DCD_URL}
                 target="_blank"
                 className="aspect-video relative hover:scale-[1.125] hover:z-30 transition duration-300"
               >
@@ -174,13 +189,17 @@ const Hero = () => {
                             from a classic while pushing the technical boundries
                             of on-hain multiplayer games.
                           </p>
-                          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                          <Link
+                            href={DCD_URL}
+                            target="_blank"
+                            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+                          >
                             <p>Play Degen Coin Dozer</p>
-                          </button>
+                          </Link>
                           <Socials
-                            twitter={"https://twitter.com/degencoinflip"}
-                            discord={"https://twitter.com/degencoinflip"}
-                            phantom={"https://twitter.com/degencoinflip"}
+                            twitter={DFC_TWITTER_URL}
+                            discord={DFC_DISCORD_URL}
+                            phantom={DCD_URL}
                           />
                         </div>
                       </DialogDescription>
@@ -191,7 +210,7 @@ const Hero = () => {
             </div>
             <div className="grid gap-4">
               <Link
-                href={"https://degenspin.com/"}
+                href={DS_URL}
                 target="_blank"
                 className="aspect-video relative hover:scale-[1.15] hover:z-30 transition duration-300"
               >
@@ -241,13 +260,17 @@ const Hero = () => {
                             runes and colors to gain fate&apos;s favor and win
                             up to 300X
                           </p>
-                          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                          <Link
+                            href={DS_URL}
+                            target="_blank"
+                            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+                          >
                             <p>Spin To Win</p>
-                          </button>
+                          </Link>
                           <Socials
-                            twitter={"https://twitter.com/degencoinflip"}
-                            discord={"https://twitter.com/degencoinflip"}
-                            phantom={"https://twitter.com/degencoinflip"}
+                            twitter={NEKKRO_TWITTER_URL}
+                            discord={NEKKRO_DISCORD_URL}
+                            phantom={DS_URL}
                           />
                         </div>
                       </DialogDescription>
@@ -309,13 +332,17 @@ const Hero = () => {
                             a Knight in the woods protecting the defenseless.
                             Create your story Choose your adventure.
                           </p>
-                          <button className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect">
+                          <Link
+                            href={"#"}
+                            target="_blank"
+                            className="bg-dcfRed rounded p-4 max-w-max text-black uppercase font-bold text-lg tracking-wider font-lato button-hover-effect"
+                          >
                             <p>Polishing Up</p>
-                          </button>
+                          </Link>
                           <Socials
-                            twitter={"https://twitter.com/degencoinflip"}
-                            discord={"https://twitter.com/degencoinflip"}
-                            phantom={"https://twitter.com/degencoinflip"}
+                            twitter={DFC_TWITTER_URL}
+                            discord={DFC_DISCORD_URL}
+                            phantom={"#"}
                           />
                         </div>
                       </DialogDescription>
