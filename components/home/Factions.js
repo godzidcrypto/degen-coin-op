@@ -52,9 +52,9 @@ const Factions = () => {
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
                 key={index}
-                className="grid sm:flex sm:flex-col lg:grid lg:grid-cols-[1fr_3fr] text-left gap-4"
+                className="grid sm:flex sm:flex-col lg:grid lg:grid-cols-[1fr_3fr] sm:text-left justify-center sm:justify-normal text-center gap-4"
               >
-                <div className="bg-[#3D2975] h-32 sm:h-auto aspect-square border-4 border-[#B660E4] relative overflow-hidden">
+                <div className="bg-[#3D2975] h-32 sm:h-auto aspect-square border-4 border-[#B660E4] relative overflow-hidden mx-auto sm:mx-0">
                   <Image
                     alt={`${name} Fat Cat`}
                     src={img}
@@ -67,7 +67,9 @@ const Factions = () => {
                   <h3 className="uppercase text-[#B660E4] text-xl font-bold">
                     {name}
                   </h3>
-                  <p className="font-lato">{description}</p>
+                  <p className="font-lato text-justify sm:text-left">
+                    {description}
+                  </p>
                 </div>
               </motion.div>
             );
