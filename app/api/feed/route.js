@@ -12,6 +12,9 @@ export async function GET() {
       headers: {
         "Content-Type": "application/json",
       },
+      next: {
+        revalidate: 1,
+      },
     }
   );
   const data = await res.json();
