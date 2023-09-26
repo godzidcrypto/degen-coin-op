@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "degenfatcats-theta.s3.us-east-2.amazonaws.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "degenpersonas.s3.us-east-2.amazonaws.com",
+        port: "",
+      },
     ],
   },
 };
