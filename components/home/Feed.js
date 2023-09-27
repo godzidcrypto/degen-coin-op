@@ -2,6 +2,7 @@ import useSWR from "swr";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Skeleton } from "../ui/skeleton";
 
 const fetcher = (urls) => {
   const f = (url) => fetch(url).then((r) => r.json());
@@ -10,9 +11,32 @@ const fetcher = (urls) => {
 
 const Feed = () => {
   const urls = ["/api/feed/dcf", "/api/feed/ds"];
-  const { data, error } = useSWR(urls, fetcher, {
+  const { data, isLoading } = useSWR(urls, fetcher, {
     refreshInterval: 1000,
   });
+
+  if (isLoading) {
+    return (
+      <section className="min-h-[80vh] px-6 sm:px-12 lg:px-36 pt-12 md:pt-24 py-24 grid gap-24 lg:gap-48 bg-dcfWhite text-black extendHomeSpacing relative">
+        <div className="flex flex-col gap-2">
+          {Array.from({ length: 10 }, (_, i) => i + 1).map((id) => {
+            return (
+              <Skeleton
+                className={`w-full h-16 ${
+                  id % 2 === 0 ? "bg-[#E9A53A]" : "bg-[#EE7983]"
+                } rounded flex items-center p-2 gap-4`}
+                key={id}
+              >
+                <div className="rounded-full w-12 h-12 bg-dcfWhite" />
+                <Skeleton className="w-[100px] grow h-[20px] rounded-full bg-dcfWhite" />
+                <Skeleton className="w-[100px] h-[20px] rounded-full bg-dcfWhite" />
+              </Skeleton>
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
 
   if (data) {
     // Combine Arrays (DCF and DS)
