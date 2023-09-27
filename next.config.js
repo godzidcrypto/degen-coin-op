@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "degenpersonas.s3.us-east-2.amazonaws.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+        port: "",
+      },
     ],
   },
 };

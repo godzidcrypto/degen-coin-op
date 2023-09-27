@@ -109,6 +109,17 @@ const Feed = () => {
                 }
               };
 
+              const text = {
+                dcf: `${nickname} flipped ${amount} and ${
+                  won ? "doubled (2x)" : "got rugged"
+                }`,
+                ds: `${nickname} sacrificed ${amount} and ${
+                  won
+                    ? `won ${winAmount} (${(winAmount / amount).toFixed(2)}x)`
+                    : `lost`
+                }`,
+              };
+
               return (
                 <Link
                   href={`https://solscan.io/tx/${depositTxn}`}
@@ -119,34 +130,20 @@ const Feed = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className={` text-white text-xs sm:text-base p-4 flex items-center gap-4 rounded hover:bg-dcfWhite border-2 duration-200 transition group relative ${colors[game]}`}
+                    className={` text-white text-xs sm:text-base p-4 py-2 flex items-center gap-4 rounded hover:bg-dcfWhite border-2 duration-200 transition group relative ${colors[game]}`}
                   >
                     <Image
                       width={50}
                       height={50}
-                      src={profileImageUrl || "/images/flip.png"}
-                      alt="Degen Coin Op Logo"
+                      src={profileImageUrl || "https://i.imgur.com/WtWzHUL.png"}
+                      alt="Profile Image"
                       className={`rounded-full border-2 duration-200 transition ${
                         game === "dcf"
                           ? "group-hover:border-[#E9A53A]"
                           : "group-hover:border-[#EE7983]"
                       }`}
                     />
-                    {game === "dcf" ? (
-                      <p>
-                        {nickname} flipped {amount} and{" "}
-                        {won ? "doubled (2x)" : "got rugged"}
-                      </p>
-                    ) : (
-                      <p>
-                        {nickname} sacrificed {amount} and{" "}
-                        {won
-                          ? `won ${winAmount} (${(winAmount / amount).toFixed(
-                              2
-                            )}x)`
-                          : `lost`}
-                      </p>
-                    )}
+                    <p className={`${won ? "" : ""}`}>{text[game]}</p>
                     <p className="text-[0.5rem] font-thin bottom-0 right-0 absolute">
                       {timeAgo()}
                     </p>
