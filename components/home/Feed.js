@@ -62,7 +62,7 @@ const Feed = () => {
           className="flex flex-col gap-2"
         >
           <AnimatePresence>
-            {feed?.map((row) => {
+            {feed?.splice(0, 15).map((row) => {
               const {
                 // general
                 nickname,
@@ -119,7 +119,7 @@ const Feed = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className={` text-white p-2 flex items-center gap-4 rounded hover:bg-dcfWhite border-2 duration-200 transition group ${colors[game]}`}
+                    className={` text-white text-xs sm:text-base p-4 flex items-center gap-4 rounded hover:bg-dcfWhite border-2 duration-200 transition group relative ${colors[game]}`}
                   >
                     <Image
                       width={50}
@@ -147,7 +147,9 @@ const Feed = () => {
                           : `lost`}
                       </p>
                     )}
-                    <p className="text-xs font-thin">{timeAgo()}</p>
+                    <p className="text-[0.5rem] font-thin bottom-0 right-0 absolute">
+                      {timeAgo()}
+                    </p>
                   </motion.li>
                 </Link>
               );
