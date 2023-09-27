@@ -6,8 +6,7 @@ export async function GET() {
   const startTime = oneHourAgo.toISOString();
 
   const res = await fetch(
-    // `https://api.degencoinop.com/v1/games/DEGEN_SPIN/coinOps/events?startTime=${startTime}&limit=10`,
-    `https://api.degencoinflip.com/v2/coinFlips/history?startTime=${startTime}&limit=10`,
+    `https://api.degencoinop.com/v1/games/DEGEN_SPIN/coinOps/events?startTime=${startTime}&limit=10`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -19,5 +18,5 @@ export async function GET() {
   );
   const data = await res.json();
 
-  return NextResponse.json({ feed: data });
+  return NextResponse.json({ feed: data?.payload });
 }
