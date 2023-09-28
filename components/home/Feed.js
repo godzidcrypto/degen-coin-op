@@ -59,7 +59,7 @@ const Feed = () => {
           layout
           layoutId={"list"}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-2"
+          className="flex flex-col max-w-2xl mx-auto gap-2"
         >
           <AnimatePresence>
             {feed?.splice(0, 15).map((row) => {
@@ -120,11 +120,18 @@ const Feed = () => {
                 }`,
               };
 
+              const placeholderImage = "https://i.imgur.com/WtWzHUL.png";
+              // Fix broken image links (e.g. discord cdn)
+              const onImageError = (e) => {
+                e.target.srcset = placeholderImage;
+              };
+
               return (
                 <Link
                   href={`https://solscan.io/tx/${depositTxn}`}
                   target="_blank"
                   key={row.id}
+                  className="w-full"
                 >
                   <motion.li
                     initial={{ opacity: 0 }}
@@ -133,9 +140,10 @@ const Feed = () => {
                     className={` text-white text-xs sm:text-base p-4 py-2 flex items-center gap-4 rounded hover:bg-dcfWhite border-2 duration-200 transition group relative ${colors[game]}`}
                   >
                     <Image
+                      onError={onImageError}
                       width={50}
                       height={50}
-                      src={profileImageUrl || "https://i.imgur.com/WtWzHUL.png"}
+                      src={profileImageUrl || placeholderImage}
                       alt="Profile Image"
                       className={`rounded-full border-2 duration-200 transition ${
                         game === "dcf"
